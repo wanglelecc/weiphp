@@ -1,0 +1,661 @@
+[ 2017-08-22T07:50:03+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Update/delcache.html&mdm=367|375
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:50:04+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/ArticleStyle/add.html
+SQL: SHOW COLUMNS FROM `wp_hooks` [ RunTime:0.0009s ]
+SQL: SELECT `name`,`addons` FROM `wp_hooks`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_plugin` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind','Cms','Feedback','WeiUserCenter','WeiPicture')  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind','Cms','Feedback','WeiUserCenter','WeiPicture')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_config` [ RunTime:0.0006s ]
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_menu` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_apps` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:50:08+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Scan/index.html&mdm=367|385
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`public_name` FROM `wp_apps` WHERE `type` = '3' AND `app_type` = 0 ORDER BY id desc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:50:10+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Update/index.html&mdm=367|374
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:50:13+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Update/delcache.html&mdm=367|375
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:50:14+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/PublicBind/index.html&mdm=367|386
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:50:24+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/PublicBind/index.html&mdm=367|386
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:50:50+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_user` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:50:53+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Rule/wechat.html&mdm=376|378
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_apps_auth` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_apps_auth` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`type_0`,`type_1`,`type_2`,`type_3` FROM `wp_apps_auth` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0007s ]
+
+[ 2017-08-22T07:50:59+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Rule/wechat/mdm/376%7C378/p/2.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_apps_auth` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`type_0`,`type_1`,`type_2`,`type_3` FROM `wp_apps_auth` ORDER BY id desc LIMIT 20,20   [ RunTime:0.0008s ]
+
+[ 2017-08-22T07:51:02+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Rule/wechat.html&mdm=376|378
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:51:03+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/AuthManager/wechat.html&mdm=376|379
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_apps_auth` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_apps_auth`  [ RunTime:0.0004s ]
+
+[ 2017-08-22T07:51:08+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Rule/wechat/mdm/376|378/p/2.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+
+[ 2017-08-22T07:51:12+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/AuthManager/set_switch.html
+SQL: SHOW COLUMNS FROM `wp_admin_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','Admin','1503359472','http://wechat02.56br.com/index.php?s=/w0/Admin/AuthManager/set_switch.html
+POST: array (
+  \'name\' => \'type_2|PAYMENT\',
+  \'val\' => \'true\',
+); 
+') [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','Admin','1503359472','http://wechat02.56br.com/index.php?s=/w0/Admin/AuthManager/set_switch.html
+POST: array (
+  \'name\' => \'type_2|PAYMENT\',
+  \'val\' => \'true\',
+); 
+') [ RunTime:0.0002s ]
+SQL: UPDATE `wp_apps_auth` SET `type_2`='1' WHERE `name` = 'PAYMENT' [ RunTime:0.0009s ]
+
+[ 2017-08-22T07:51:12+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/AuthManager/set_switch.html
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503359472','http://wechat02.56br.com/index.php?s=/w0/Admin/AuthManager/set_switch.html
+POST: array (
+  \'name\' => \'type_2|PAYMENT\',
+  \'val\' => \'false\',
+); 
+') [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503359472','http://wechat02.56br.com/index.php?s=/w0/Admin/AuthManager/set_switch.html
+POST: array (
+  \'name\' => \'type_2|PAYMENT\',
+  \'val\' => \'false\',
+); 
+') [ RunTime:0.0002s ]
+SQL: UPDATE `wp_apps_auth` SET `type_2`='0' WHERE `name` = 'PAYMENT' [ RunTime:0.0004s ]
+
+[ 2017-08-22T07:51:21+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/index.html&mdm=380|381
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`type`,`cate_id`,`is_show` FROM `wp_addons` WHERE `name` IN ('Ask','AutoReply','BusinessCard','Card','CardVouchers','Cms','Comment','ConfigureAccount','Coupon','CustomMenu','CustomReply','DeveloperTool','Draw','Exam','Feedback','Forms','Game','Guess','Invite','Leaflets','NoAnswer','Payment','PublicBind','QrAdmin','RealPrize','RedBag','Reserve','Servicer','Shop','ShopCoupon','SingIn','Sms','Survey','Test','UserCenter','Vote','Wecome','WeiPicture','WeiSite','WeiUserCenter','Weiba','WishCard') ORDER BY id desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wp_addon_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_addon_category`  [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:51:28+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Plugin/index.html&mdm=380|382
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `title`,`name` FROM `wp_plugin` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0004s ]
+SQL: SELECT `title`,`name` FROM `wp_plugin` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`cate_id`,`is_show` FROM `wp_plugin` WHERE `name` IN ('BaiduStatistics','Cascade','DynamicCheckbox','DynamicSelect','Editor','EditorForAdmin','Material','News','Prize','ReturnTop')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_plugin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_plugin` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:51:32+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/hooks.html&mdm=380|383
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_hooks` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons` FROM `wp_hooks` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:51:38+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Plugin/index.html&mdm=380|382
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`name` FROM `wp_plugin` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:51:39+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Model/index.html&mdm=366
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_model` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0004s ]
+SQL: SHOW TABLES LIKE 'wp_f' [ RunTime:0.0021s ]
+SQL: SHOW TABLES LIKE 'wp_c' [ RunTime:0.0016s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_e' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_r' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_q' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0013s ]
+
+[ 2017-08-22T07:51:41+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/hooks.html&mdm=380|383
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:51:49+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Model/index.html&mdm=366
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:51:58+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/model/edit/id/1168.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` WHERE `id` = 1168 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0004s ]
+
+[ 2017-08-22T07:52:05+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/model/edit/id/1168.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` WHERE `id` = 1168 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:52:08+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/model/edit/id/1168.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:52:30+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/attribute/index/model_id/1168.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1168 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `title` FROM `wp_model` WHERE `id` = 1168 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:52:55+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/edithook/id/8.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons` FROM `wp_hooks` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-22T07:53:01+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'menu' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 0 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:53:04+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/edithook/id/8.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+
+[ 2017-08-22T07:53:10+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+
+[ 2017-08-22T07:53:17+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/2.html&mdm=368|393
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 2 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 2 ORDER BY sort asc,id asc  [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:53:27+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/2.html&mdm=368|393
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:53:30+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 0 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:53:43+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/2.html&mdm=368|393
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 2 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 2 ORDER BY sort asc,id asc  [ RunTime:0.0002s ]
+
+[ 2017-08-22T07:53:45+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/2.html&mdm=368|393
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 2 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 2 ORDER BY sort asc,id asc  [ RunTime:0.0002s ]
+
+[ 2017-08-22T07:53:47+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 1 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 1 ORDER BY sort asc,id asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T07:53:52+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/lists.html&mdm=384
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_api` [ RunTime:0.0009s ]
+SQL: SELECT `title`,`url`,`method`,`mod`,`id` FROM `wp_api` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_api` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T07:53:57+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/add.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `name`,`title` FROM `wp_model` ORDER BY name asc  [ RunTime:0.0011s ]
+
+[ 2017-08-22T07:53:57+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists/place/1.html&mdm=368|370
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:54:02+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/lists.html&mdm=384
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:54:06+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/add.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:54:28+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/getFields.html
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','Admin','1503359668','http://wechat02.56br.com/index.php?s=/w0/Admin/Api/getFields.html
+POST: array (
+  \'mod\' => \'api\',
+); 
+') [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','Admin','1503359668','http://wechat02.56br.com/index.php?s=/w0/Admin/Api/getFields.html
+POST: array (
+  \'mod\' => \'api\',
+); 
+') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T07:54:32+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/getFields.html
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503359672','http://wechat02.56br.com/index.php?s=/w0/Admin/Api/getFields.html
+POST: array (
+  \'mod\' => \'0\',
+); 
+') [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503359672','http://wechat02.56br.com/index.php?s=/w0/Admin/Api/getFields.html
+POST: array (
+  \'mod\' => \'0\',
+); 
+') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T07:54:33+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/manage.html&mdm=387|388
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'admin_log' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`ip`,`content`,`mod`,`cTime`,`id` FROM `wp_admin_log` WHERE `mod` !="Admin" ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_admin_log` WHERE `mod` !="Admin" LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T07:54:36+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/admin.html&mdm=387|389
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`ip`,`content`,`mod`,`cTime`,`id` FROM `wp_admin_log` WHERE `mod` = 'Admin' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_manager` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_apps_follow` [ RunTime:0.0007s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_apps_follow` WHERE ( uid='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_user_tag_link` [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_admin_log` WHERE `mod` = 'Admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T07:54:40+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/api.html&mdm=387|390
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'request_log' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_request_log` [ RunTime:0.0014s ]
+SQL: SELECT `cTime`,`url`,`error_code`,`msg`,`res`,`id` FROM `wp_request_log` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_request_log` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T07:54:42+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/debug.html&mdm=387|391
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'debug_log' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_debug_log` [ RunTime:0.0010s ]
+SQL: SELECT `cTime_format`,`data`,`id` FROM `wp_debug_log` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_debug_log` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T07:54:43+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/manage.html&mdm=387|388
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:54:46+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/error.html&mdm=387|392
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: select VERSION() as v [ RunTime:0.0002s ]
+
+[ 2017-08-22T07:54:46+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/admin.html&mdm=387|389
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+
+[ 2017-08-22T07:54:50+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/api.html&mdm=387|390
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T07:54:52+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/debug.html&mdm=387|391
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:54:55+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/error.html&mdm=387|392
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T07:55:16+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/lists.html&mdm=384
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title`,`url`,`method`,`mod`,`id` FROM `wp_api` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_api` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T09:06:34+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T09:06:44+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+
+[ 2017-08-22T09:14:06+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Public/login.html
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `nickname` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_action` WHERE `name` = 'admin_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wp_user` SET `login_count`=`login_count`+1,`last_login_time`='1503364446',`last_login_ip`='3232235945' WHERE `uid` = 1 [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:14:06+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Index/index.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T09:14:06+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+
+[ 2017-08-22T09:14:14+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0023s ]
+
+[ 2017-08-22T09:14:26+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:14:28+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/index.html&mdm=380|381
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`type`,`cate_id`,`is_show` FROM `wp_addons` WHERE `name` IN ('Ask','AutoReply','BusinessCard','Card','CardVouchers','Cms','Comment','ConfigureAccount','Coupon','CustomMenu','CustomReply','DeveloperTool','Draw','Exam','Feedback','Forms','Game','Guess','Invite','Leaflets','NoAnswer','Payment','PublicBind','QrAdmin','RealPrize','RedBag','Reserve','Servicer','Shop','ShopCoupon','SingIn','Sms','Survey','Test','UserCenter','Vote','Wecome','WeiPicture','WeiSite','WeiUserCenter','Weiba','WishCard') ORDER BY id desc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wp_addon_category`  [ RunTime:0.0010s ]
+
+[ 2017-08-22T09:14:33+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+
+[ 2017-08-22T09:14:48+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/index.html&mdm=367|372
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY id LIMIT 0,20   [ RunTime:0.0006s ]
+
+[ 2017-08-22T09:14:52+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/ArticleStyle/lists.html&mdm=367|373
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_article_style` [ RunTime:0.0011s ]
+SQL: SELECT count(1) as count FROM `wp_article_style` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_article_style` LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_article_style_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T09:14:54+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Update/index.html&mdm=367|374
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0012s ]
+
+[ 2017-08-22T09:14:56+08:00 ] 192.168.1.169 /index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503364496','http://wechat02.56br.com/index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+POST: array (
+  \'id\' => \'1\',
+); 
+') [ RunTime:0.0007s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503364496','http://wechat02.56br.com/index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+POST: array (
+  \'id\' => \'1\',
+); 
+') [ RunTime:0.0002s ]
+
+[ 2017-08-22T09:15:00+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+
+[ 2017-08-22T09:15:25+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0006s ]
+
+[ 2017-08-22T09:15:27+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0005s ]
+
+[ 2017-08-22T09:16:32+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+
+[ 2017-08-22T09:16:58+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-22T09:16:59+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/index.html&mdm=380|381
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`type`,`cate_id`,`is_show` FROM `wp_addons` WHERE `name` IN ('Ask','AutoReply','BusinessCard','Card','CardVouchers','Cms','Comment','ConfigureAccount','Coupon','CustomMenu','CustomReply','DeveloperTool','Draw','Exam','Feedback','Forms','Game','Guess','Invite','Leaflets','NoAnswer','Payment','PublicBind','QrAdmin','RealPrize','RedBag','Reserve','Servicer','Shop','ShopCoupon','SingIn','Sms','Survey','Test','UserCenter','Vote','Wecome','WeiPicture','WeiSite','WeiUserCenter','Weiba','WishCard') ORDER BY id desc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_addon_category`  [ RunTime:0.0006s ]
+
+[ 2017-08-22T09:17:00+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Model/index.html&mdm=366
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0004s ]
+SQL: SHOW TABLES LIKE 'wp_f' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_c' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_e' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_r' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_q' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0016s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0012s ]
+
+[ 2017-08-22T09:17:02+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 0 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T09:17:03+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/lists.html&mdm=384
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `title`,`url`,`method`,`mod`,`id` FROM `wp_api` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_api` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T09:17:05+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/manage.html&mdm=387|388
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`ip`,`content`,`mod`,`cTime`,`id` FROM `wp_admin_log` WHERE `mod` !="Admin" ORDER BY id desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_admin_log` WHERE `mod` !="Admin" LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T09:17:07+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-22T09:17:09+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/User/index.html&mdm=376|377
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`nickname`,`password`,`truename`,`mobile`,`email`,`sex`,`headimgurl`,`city`,`province`,`country`,`language`,`score`,`experience`,`unionid`,`login_count`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`is_init`,`is_audit`,`subscribe_time`,`remark`,`groupid`,`come_from`,`login_password`,`manager_id`,`level`,`membership` FROM `wp_user` WHERE `status` >= 0 AND `nickname` LIKE '%%' AND `password` IS NOT NULL ORDER BY uid desc LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:17:11+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Addons/index.html&mdm=380|381
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist`,`type`,`cate_id`,`is_show` FROM `wp_addons` WHERE `name` IN ('Ask','AutoReply','BusinessCard','Card','CardVouchers','Cms','Comment','ConfigureAccount','Coupon','CustomMenu','CustomReply','DeveloperTool','Draw','Exam','Feedback','Forms','Game','Guess','Invite','Leaflets','NoAnswer','Payment','PublicBind','QrAdmin','RealPrize','RedBag','Reserve','Servicer','Shop','ShopCoupon','SingIn','Sms','Survey','Test','UserCenter','Vote','Wecome','WeiPicture','WeiSite','WeiUserCenter','Weiba','WishCard') ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_addon_category`  [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:17:12+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Model/index.html&mdm=366
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0003s ]
+SQL: SHOW TABLES LIKE 'wp_f' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_c' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_e' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_r' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0013s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_q' [ RunTime:0.0011s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0012s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0012s ]
+
+[ 2017-08-22T09:17:13+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Menu/lists.html&mdm=368|369
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `title`,`menu_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`id` FROM `wp_menu` WHERE `place` = 0 ORDER BY id desc LIMIT 0,10000   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_menu` WHERE `place` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`menu_type`,`pid`,`title`,`url_type`,`addon_name`,`url`,`target`,`is_hide`,`sort`,`place` FROM `wp_menu` WHERE `place` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T09:17:14+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Api/lists.html&mdm=384
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'api' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title`,`url`,`method`,`mod`,`id` FROM `wp_api` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_api` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T09:17:16+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Log/manage.html&mdm=387|388
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`ip`,`content`,`mod`,`cTime`,`id` FROM `wp_admin_log` WHERE `mod` !="Admin" ORDER BY id desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_admin_log` WHERE `mod` !="Admin" LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:17:17+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Model/index.html&mdm=366
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_model` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5` FROM `wp_model` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT `name`,`title` FROM `wp_addons`  [ RunTime:0.0003s ]
+SQL: SHOW TABLES LIKE 'wp_f' [ RunTime:0.0017s ]
+SQL: SHOW TABLES LIKE 'wp_c' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_e' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_d' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_r' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_a' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_s' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_q' [ RunTime:0.0015s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0017s ]
+SQL: SHOW TABLES LIKE 'wp_u' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0014s ]
+SQL: SHOW TABLES LIKE 'wp_w' [ RunTime:0.0017s ]
+SQL: SHOW TABLES LIKE 'wp_t' [ RunTime:0.0014s ]
+
+[ 2017-08-22T09:17:18+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+
+[ 2017-08-22T09:17:20+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/index.html&mdm=367|372
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `wp_config` WHERE `status` = 1 ORDER BY id LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2017-08-22T09:17:21+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Update/index.html&mdm=367|374
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T09:17:24+08:00 ] 192.168.1.169 /index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503364643','http://wechat02.56br.com/index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+POST: array (
+  \'id\' => \'1\',
+); 
+') [ RunTime:0.0008s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','Admin','1503364643','http://wechat02.56br.com/index.php?s=/w0/admin/Update/step01_checkVersionByAjax.html
+POST: array (
+  \'id\' => \'1\',
+); 
+') [ RunTime:0.0003s ]
+
+[ 2017-08-22T09:17:24+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/ArticleStyle/lists.html&mdm=367|373
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT count(1) as count FROM `wp_article_style` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_article_style` LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_article_style_group` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T09:17:36+08:00 ] 192.168.1.169 /index.php?s=/w0/Admin/Config/group.html&mdm=367|371
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wp_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+

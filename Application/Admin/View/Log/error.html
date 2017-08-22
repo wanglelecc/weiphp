@@ -1,0 +1,41 @@
+<extend name="Public/base"/>
+<block name="body">
+  <!-- 标题栏 -->
+  
+  <div class="main-title">
+    <h2>错误日志</h2>
+    <div class="fr">
+      <span>日志开关：</span>
+      <div class="weui-cell-cp">
+        <label for="switch_2" class="weui-switch-cp">
+        <input id="switch_2" class="weui-switch-cp__input" type="checkbox" <notempty name="error_log"> checked="checked"</notempty> >
+        <div class="weui-switch-cp__box"></div>
+        </label>
+      </div>
+     </div> 
+  </div>
+    <div class="mb30">
+      <p>为了方便我们持续改进产品质量，建议大家在超级管理员后台的网站配置上开启错误日志共享计划:</p>
+    开启共享计划后，程序会自动把你系统里的级别为EMERG,ALERT,CRIT,ERR的错误日志（其它日志不会共享），PHP版本号，MYSQL版本号，服务器操作系统（Luinx还是window）,PHP运行环境（nginx还是apache）这几项信息上传到我们官网进行问题定位分析。其它敏感信息我们是不会上传的，同时系统每天只会上传一次日志，不会影响你系统的性能，请放心开启。
+    </div>
+
+  <h2 class="mb30" style="font-weight:400;">当前服务器参数</h2>
+  <ul>
+    <li>操作系统：{:PHP_OS}</li>
+    <li>PHP版本：{:PHP_VERSION}</li>
+    <li>MYSQL版本：{$mysql}</li>
+    <li>服务器信息：{$_SERVER ['SERVER_SOFTWARE']}</li>
+    <li>PHP信息：{:PHP_SAPI}</li>
+    <li>端口号：{$_SERVER ['SERVER_PORT']}</li>
+  </ul>
+</block>
+<block name="script">
+  <script type="text/javascript">
+$(function(){
+	$('#switch_2').change(function(){
+		var val = $(this).is(':checked') ? 1:0;
+		$.post("{:U('error')}",{val:val});
+	});
+})
+</script>
+</block>

@@ -1,0 +1,166 @@
+[ 2017-08-22T08:35:02+08:00 ] 192.168.1.169 /index.php?s=/w16/Forms/Forms/lists.html&mdm=17|23
+NOTIC: [2] Cannot redeclare class Think\Action D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 310 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::lists() should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::edit() should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::add() should be compatible with Think\ManageBaseController::add($model = NULL) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [8] Undefined index: uid D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 153 行.
+NOTIC: [8] Undefined variable: tongji_code D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 120 行.
+NOTIC: [8] Undefined index: group_id D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 14 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 60 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 60 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 104 行.
+NOTIC: [8] Undefined variable: fields D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 21 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\Controller.class.php 第 1019 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\Controller.class.php 第 806 行.
+NOTIC: [8] Use of undefined constant website_logo - assumed 'website_logo' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 64 行.
+NOTIC: [8] Use of undefined constant headimgurl - assumed 'headimgurl' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 92 行.
+NOTIC: [8] Undefined variable: output D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 1644 行.
+NOTIC: [8] Undefined variable: core_side_category D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 132 行.
+NOTIC: [8] Undefined variable: add_url D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 164 行.
+NOTIC: [8] Undefined variable: del_url D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 166 行.
+NOTIC: [8] Use of undefined constant model - assumed 'model' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 177 行.
+NOTIC: [8] Undefined variable: search_url D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\d8036bf2e3097f0fcc1a7edf8560b885.php 第 177 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+
+[ 2017-08-22T08:35:05+08:00 ] 192.168.1.169 /index.php?s=/w16/Forms/Forms/add/model/39/mdm/17%7C23.html
+NOTIC: [2] Cannot redeclare class Think\Action D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 310 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::lists() should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::edit() should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::add() should be compatible with Think\ManageBaseController::add($model = NULL) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [8] Undefined index: uid D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 153 行.
+NOTIC: [8] Undefined variable: tongji_code D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 120 行.
+NOTIC: [8] Undefined index: group_id D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 14 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 104 行.
+NOTIC: [8] Undefined offset: 60 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 60 D:\webServer\www\wll\wechat.56br.com\Application\Common\Model\MenuModel.class.php 第 104 行.
+NOTIC: [8] Use of undefined constant website_logo - assumed 'website_logo' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 64 行.
+NOTIC: [8] Use of undefined constant headimgurl - assumed 'headimgurl' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 92 行.
+NOTIC: [8] Undefined variable: output D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 1644 行.
+NOTIC: [8] Undefined variable: core_side_category D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 132 行.
+NOTIC: [8] Undefined variable: model D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 182 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 186 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 192 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 199 行.
+NOTIC: [8] Use of undefined constant cover - assumed 'cover' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 201 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 211 行.
+NOTIC: [8] Undefined variable: fields D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 219 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 219 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 219 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 226 行.
+NOTIC: [8] Undefined variable: attr_list D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 243 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 275 行.
+NOTIC: [8] Use of undefined constant content - assumed 'content' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 276 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 276 行.
+NOTIC: [8] Undefined index: is_mult D:\webServer\www\wll\wechat.56br.com\Plugins\EditorForAdmin\EditorForAdminAddon.class.php 第 49 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons D:\webServer\www\wll\wechat.56br.com\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: data D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Forms\84a86fb0896db9fccbc3fbf792fc495d.php 第 279 行.
+
+[ 2017-08-22T08:35:14+08:00 ] 192.168.1.169 /index.php?s=/w16/Forms/Forms/add/model/39/mdm/17|23.html
+NOTIC: [2] Cannot redeclare class Think\Action D:\webServer\www\wll\wechat.56br.com\ThinkPHP\Library\Think\ManageBaseController.class.php 第 310 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::lists() should be compatible with Think\ManageBaseController::lists($model = NULL, $page = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::edit() should be compatible with Think\ManageBaseController::edit($model = NULL, $id = 0) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Forms\Controller\FormsController::add() should be compatible with Think\ManageBaseController::add($model = NULL) D:\webServer\www\wll\wechat.56br.com\Addons\Forms\Controller\FormsController.class.php 第 7 行.
+

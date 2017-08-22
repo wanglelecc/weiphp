@@ -1,0 +1,4 @@
+page{background: #f2f2f2;}
+.product{padding: 45rpx;overflow: hidden}
+.product_item{background: #fff;width: 240rpx;height: 240rpx;margin: 45rpx;text-align: center;padding-top: 52rpx;box-sizing: border-box;font-size: 28rpx;float: left;}
+.product_item image{width: 76rpx;height: 76rpx;margin-bottom: 24rpx}

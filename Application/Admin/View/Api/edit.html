@@ -1,0 +1,466 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="main-title cf">
+        <h2>{$title}</h2>
+    </div>
+    <!-- 标签页导航 -->
+<div class="tab-wrap">
+    <div class="tab-content api-style">
+    <!-- 表单 -->
+    <weiphp:form model='Api/Api' >
+    
+    <weiphp:input name="url" is_custom="1">
+            <div class="form-item cf toggle-url ">
+			<label class="item-label"><span class="need_flag">*</span>接口地址:</label>{:SITE_URL}/index.php?s=/Api/Api/index/mod/<span id="url_model">{$mod}</span>/act/
+			<div class="controls"><input type="text" class="text input-large" name="url" value="{$data.url}" style="width:70px">/access_token/ACCESS_TOKEN</div>
+            </div>
+    </weiphp:input>
+            
+    <!--查询条件-->
+    <weiphp:input name='condition' is_custom="1" >
+    <div class="form-item cf" id="condition">
+        <label class="item-label">查询条件<span class="check-tips">（请求参数）</span></label>
+        <div style="margin: 15px 0; " class="specTable data-table">
+            <table cellspacing="1" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px">字段</th>
+                        <th style="width: 150px">名称</th>
+                        <th style="width: 150px">条件</th>
+                        <th style="width: 150px">必填</th>
+                        <th style="width: 100px">格式</th>
+                        <th style="width: 150px">描述</th>
+                        <th style="width: 150px">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="list_data_tbody">
+                    <volist name="params.condition" id="cd" key="sort">
+                    
+                    <tr class="list_tr" rel="{$sort}">
+                        <td>
+                        <select name="condition[{$sort}][name]" class="select_field_event" rel="edit">
+    <volist name="param_fields" id="vo">                            
+    <option value='{$vo.name}' data-must='{$vo.is_must}' data-type='{$vo.type}' data-remark='{$vo.remark}' <eq name="cd.name" value="$vo.name">selected</eq> >{$vo.title}</option>
+    </volist>
+                        </select>                                                          
+                        </td>    
+                        <td><input type="text" value="{$cd.title}" class="form-control attr_title" name="condition[{$sort}][title]"></td>   
+                        <td>
+                        <select name="condition[{$sort}][extra]" class="select_condition">
+                            <option value="eq" <eq name="cd.extra" value="eq">selected</eq> >等于</option>
+                            <option value="neq" <eq name="cd.extra" value="neq">selected</eq> >不等于</option>
+                            <option value="gt" <eq name="cd.extra" value="gt">selected</eq> >大于</option>
+                            <option value="egt" <eq name="cd.extra" value="egt">selected</eq> >大于等于</option>
+                            <option value="lt" <eq name="cd.extra" value="lt">selected</eq> >小于</option>
+                            <option value="elt" <eq name="cd.extra" value="elt">selected</eq> >小于等于</option>
+                            <option value="like" <eq name="cd.extra" value="like">selected</eq> >模糊搜索</option>
+                            <option value="between" <eq name="cd.extra" value="between">selected</eq>>区间</option>
+                        </select></td>   
+                        <td><input type="radio" name="condition[{$sort}][is_must]" value="0" <if condition="$cd[is_must]==0">checked="checked"</if> > NO
+                        <input type="radio" name="condition[{$sort}][is_must]" value="1" <if condition="$cd[is_must]==1">checked="checked"</if> > YES</td>
+                        <td><input type="text" value="{$cd.type}" class="form-control" name="condition[{$sort}][type]" placeholder="自动" style="width:50px"> </td>
+                        <td><input type="text" value="{$cd.remark}" class="form-control" name="condition[{$sort}][remark]" placeholder="" style="width:150px"> </td>
+                        <td><a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+                    </tr>
+                    </volist>
+                    <tr class="more_tr">
+                        <td colspan="7"><a href="javascript:add_tr('condition')">+增加</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </weiphp:input>
+    <!--排序参数-->
+   <weiphp:input name='order' is_custom="1" >
+    <div class="form-item cf" id="order">
+        <label class="item-label">排序字段<span class="check-tips">（请求参数）</span></label>
+        <div style="margin: 15px 0; " class="specTable data-table">
+            <table cellspacing="1" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px">字段</th>
+                        <th style="width: 150px">名称</th>
+                        <th style="width: 150px">排序方式</th>
+                        <th style="width: 150px">必填</th>
+                        <th style="width: 150px">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="list_data_tbody">
+                    <volist name="params.order" id="cd" key="sort">
+                    <tr class="list_tr" rel="{$sort}">
+        <td><select name="order[{$sort}][name]" class="select_field_event" rel="edit">
+    <volist name="param_fields" id="vo">                            
+    <option value='{$vo.name}' data-must='{$vo.is_must}' data-type='{$vo.type}' data-remark='{$vo.remark}' <eq name="cd.name" value="$vo.name">selected</eq> >{$vo.title}</option>
+    </volist>        
+        </select></td>
+        <td><input type="text" value="{$cd.title}"  class="form-control attr_title" name="order[{$sort}][title]"></td>
+        <td>
+        <select name="order[{$sort}][extra]" class="select_condition">
+            <option value="desc" <eq name="cd.extra" value="desc">selected</eq> >倒序（大到小，最新在前）</option>
+            <option value="asc" <eq name="cd.extra" value="asc">selected</eq> >正序（小到大，最新在后）</option>
+        </select></td>        
+        <td><input type="radio" name="order[{$sort}][is_must]" value="0" <if condition="$cd[is_must]==0">checked="checked"</if> > NO 
+        <input type="radio" name="order[{$sort}][is_must]" value="1" <if condition="$cd[is_must]==1">checked="checked"</if> > YES</td>
+        <td><a href="javascript:void(0);" onclick="move_up(this)" title="向上"class="move_up">↑</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="move_down(this)" title="向下"class="move_down">↓</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+                    </tr>
+                    </volist>
+                    <tr class="more_tr">
+                        <td colspan="6"><a href="javascript:add_tr('order')">+增加</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </weiphp:input>    
+    
+    
+    <!--分页参数-->
+   <weiphp:input name='page' is_custom="1" >
+    <div class="form-item cf" id="page">
+        <label class="item-label">分页设置<span class="check-tips">（请求参数）</span></label>
+        
+        <div class="controls">
+        <input type="radio" name="page" value="0" <if condition="$data['page']==0">checked="checked"</if> > 无分页
+        <input type="radio" name="page" value="1" <if condition="$data['page']==1">checked="checked"</if> > 有分页
+        </div>
+        <div style="margin: 15px 0; display:none" class="specTable data-table" id="page_param">
+            <table cellspacing="1" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px">字段</th>
+                        <th style="width: 150px">名称</th>
+                        <th style="width: 150px">必填</th>
+                        <th style="width: 100px">格式</th>
+                        <th style="width: 150px">描述</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>page_direction</td>
+                        <td>翻页方向</td>
+                        <td>否</td>
+                        <td>String</td>
+                        <td>上一页：previous 下一页： next, 默认值：next</td>
+                    </tr>
+                    <tr>
+                        <td>page_limit</td>
+                        <td>每页数量</td>
+                        <td>否</td>
+                        <td>Int</td>
+                        <td>每页最多返回记录数，默认10条</td>
+                    </tr>
+                    <tr>
+                        <td>page_number</td>
+                        <td>页码数</td>
+                        <td>否</td>
+                        <td>Int</td>
+                        <td>默认为0时使用page_direction字段控制，大于0时page_direction失败，使用当前指定页码数</td>
+                    </tr>                                        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </weiphp:input> 
+    <!--保存内容-->
+   <weiphp:input name='save' is_custom="1" >
+    <div class="form-item cf" id="save">
+        <label class="item-label">保存内容<span class="check-tips">（请求参数）</span></label>
+        <div style="margin: 15px 0; " class="specTable data-table">
+            <table cellspacing="1" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px">字段</th>
+                        <th style="width: 150px">名称</th>
+                        <th style="width: 150px">必填</th>
+                        <th style="width: 100px">格式</th>
+                        <th style="width: 150px">描述</th>
+                        <th style="width: 150px">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="list_data_tbody">
+                    <volist name="params.save" id="cd" key="sort">
+                    <tr class="list_tr" rel="{$sort}">
+        <td><select name="save[{$sort}][name]" class="select_field_event" rel="edit">
+    <volist name="param_fields" id="vo">                            
+    <option value='{$vo.name}' data-must='{$vo.is_must}' data-type='{$vo.type}' data-remark='{$vo.remark}' <eq name="cd.name" value="$vo.name">selected</eq> >{$vo.title}</option>
+    </volist>        
+        </select></td>
+        <td><input type="text" value="{$cd.title}"  class="form-control attr_title" name="save[{$sort}][title]"></td>       
+        <td><input type="radio" name="save[{$sort}][is_must]" value="0" <if condition="$cd[is_must]==0">checked="checked"</if> > NO 
+        <input type="radio" name="save[{$sort}][is_must]" value="1" <if condition="$cd[is_must]==1">checked="checked"</if> > YES</td>
+        <td><input type="text" value="{$cd.type}" class="form-control type" name="save[{$sort}][type]" placeholder="" style="width:150px"></td>
+        <td><input type="text" value="{$cd.remark}" class="form-control remark" name="save[{$sort}][remark]" placeholder="" style="width:100px"></td>
+        <td><a href="javascript:void(0);" onclick="move_up(this)" title="向上"class="move_up">↑</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="move_down(this)" title="向下"class="move_down">↓</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+                    </tr>
+                    </volist>
+                    <tr class="more_tr">
+                        <td colspan="6"><a href="javascript:add_tr('save')">+增加</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </weiphp:input>     
+    <!--返回值-->
+   <weiphp:input name='return' is_custom="1" >
+    <div class="form-item cf" id="return">
+        <label class="item-label">返回值<span class="check-tips">（每个接口都会返回固定字段：api_status和api_msg。有多条记录返回时，业务数据会以数组的方式返回）</span></label>
+        <div style="margin: 15px 0; " class="specTable data-table">
+            <table cellspacing="1" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px">字段</th>
+                        <th style="width: 150px">名称</th>
+                        <th style="width: 100px">格式</th>
+                        <th style="width: 150px">描述</th>
+                    </tr>
+                </thead>
+                <tbody id="list_data_tbody">
+                    <tr>
+                        <td>api_status</td>
+                        <td>接口状态</td>
+                        <td>Int</td>
+                        <td>0失败 1成功</td>
+                    </tr>
+                    <tr>
+                        <td>api_msg</td>
+                        <td>接口提示语</td>
+                        <td>String</td>
+                        <td>api_status=0时返回失败原因，api_status=0时为空</td>
+                    </tr> 
+                    <tr>
+                        <td>data</td>
+                        <td>业务数据</td>
+                        <td>array</td>
+                        <td>当接口类型为查询时，会以数组的方式返回查询的内容</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </weiphp:input>     
+    </weiphp:form>    
+    </div>
+</div>
+<table style="display: none">
+	<tr id="default_tr_condition">
+        <td><select name="condition[sort_id][name]" class="select_field_event"></select></td>
+        <td><input type="text" value=""  class="form-control attr_title" name="condition[sort_id][title]"></td>
+        <td>
+        <select name="condition[sort_id][extra]" class="select_condition">
+            <option value="eq">等于</option>
+            <option value="neq">不等于</option>
+            <option value="gt">大于</option>
+            <option value="egt">大于等于</option>
+            <option value="lt">小于</option>
+            <option value="elt">小于等于</option>
+            <option value="like">模糊搜索</option>
+            <option value="between">区间</option>
+        </select></td>        
+        <td><input type="radio" name="condition[sort_id][is_must]" value="0" checked="checked"> NO 
+        <input type="radio" name="condition[sort_id][is_must]" value="1"> YES</td>
+        <td><input type="text" value="" class="form-control type" name="condition[sort_id][type]" placeholder="" style="width:150px"></td>
+        <td><input type="text" value="" class="form-control remark" name="condition[sort_id][remark]" placeholder="" style="width:100px"></td>
+        <td><a href="javascript:void(0);" onclick="move_up(this)" title="向上"class="move_up">↑</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="move_down(this)" title="向下"class="move_down">↓</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+	</tr>
+	<tr id="default_tr_order">
+        <td><select name="order[sort_id][name]" class="select_field_event"></select></td>
+        <td><input type="text" value=""  class="form-control attr_title" name="order[sort_id][title]"></td>
+        <td>
+        <select name="order[sort_id][extra]" class="select_condition">
+            <option value="desc">倒序（大到小，最新在前）</option>
+            <option value="asc">正序（小到大，最新在后）</option>
+        </select></td>        
+        <td><input type="radio" name="order[sort_id][is_must]" value="0" checked="checked"> NO 
+        <input type="radio" name="order[sort_id][is_must]" value="1"> YES</td>
+        <td><a href="javascript:void(0);" onclick="move_up(this)" title="向上"class="move_up">↑</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="move_down(this)" title="向下"class="move_down">↓</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+	</tr>
+	<tr id="default_tr_save">
+        <td><select name="save[sort_id][name]" class="select_field_event"></select></td>
+        <td><input type="text" value=""  class="form-control attr_title" name="save[sort_id][title]"></td>       
+        <td><input type="radio" name="save[sort_id][is_must]" value="0" checked="checked"> NO 
+        <input type="radio" name="save[sort_id][is_must]" value="1"> YES</td>
+        <td><input type="text" value="" class="form-control type" name="save[sort_id][type]" placeholder="" style="width:150px"></td>
+        <td><input type="text" value="" class="form-control remark" name="save[sort_id][remark]" placeholder="" style="width:100px"></td>
+        <td><a href="javascript:void(0);" onclick="move_up(this)" title="向上"class="move_up">↑</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="move_down(this)" title="向下"class="move_down">↓</a>&nbsp;&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="remove_tr(this)">删除</a></td>
+	</tr>               
+    
+</table>
+</block>
+<block name="script"> 
+<script	type="text/javascript" charset="utf-8">
+function init(){
+	hide_move()
+	$('.select_field_event').change(function(){ select_field_event(this); });
+}
+
+$(function(){
+	$('select[name="mod"]').change(function(){ select_model(0); });
+	
+	$('input[name="page"]').change(function(){ page(this); });
+	page()
+	
+    $('input[name="type"]').change(function(){ type(this); });
+	type()
+	
+	init()
+	<php>if(isset($data['id'])) { </php>
+	select_model(1);
+	<php> } </php>
+});
+
+//增加问题
+var tr_sort_id = 0;
+function add_tr(id){
+	var list_count = 0;
+	$('#'+id+' .list_tr').each(function() {
+		list_count += 1;
+		var sort_id = $(this).attr('rel');
+		if(sort_id>tr_sort_id) tr_sort_id = sort_id;
+    });	
+	
+	tr_sort_id += 1;
+
+	re = new RegExp("sort_id", "g");
+	re2 = new RegExp("param_type", "g");
+	str  = $('#default_tr_'+id).html().replace(re, tr_sort_id).replace(re2, id);
+	//console.log(str);
+	var html = '<tr class="list_tr" rel="'+tr_sort_id+'">'+ str +'</tr>';
+	if(list_count==0)
+	  $('#'+id+' #list_data_tbody tr').before(html);	
+	else
+	  $('#'+id+' .list_tr:last').after(html);
+	  
+	init()
+}
+//删除问题
+function remove_tr(_this){	
+	$(_this).parent().parent().remove();
+	init()
+}
+//排序--向上
+function move_up(obj) { 
+  var objParentTR = $(obj).parent().parent(); 
+  var prevTR = objParentTR.prev(); 
+  if (prevTR.length > 0) { 
+	prevTR.insertAfter(objParentTR); 
+  }
+  init()
+} 
+//排序--向下
+function move_down(obj) { 
+  var objParentTR = $(obj).parent().parent(); 
+  var nextTR = objParentTR.next(); 
+  if (nextTR.length > 0) { 
+	nextTR.insertBefore(objParentTR); 
+  } 
+  init()
+} 
+//第一行只显示向下，最后一行只显示向上
+function hide_move(){
+	$('.move_up').each(function() {
+		$(this).show();
+    });
+	$('.move_down').each(function() {
+		$(this).show();
+    });	
+	$('.list_tr:first').find('.move_up').hide();
+	$('.list_tr:last').find('.move_down').hide();
+}
+
+//选择所属模块
+function select_model(type){
+	var mod = $('select[name="mod"]').val();
+	
+	if(type==0){
+		$('#url_model').text(mod)
+		
+		//获取全部字段
+		$.post("{:U('getFields')}",{mod:mod},function(html){
+			$('.select_field_event').each(function() {
+				$(this).html(html)
+			});
+		});
+	}else{
+		//获取全部字段
+		$.post("{:U('getFields')}",{mod:mod},function(html){
+			$('.select_field_event').each(function() {
+				if($(this).attr('rel')!='edit'){
+				    $(this).html(html)
+				}
+			});
+		});
+	}
+}
+function select_field_event(_this){
+	var sel = $(_this).find("option:selected")
+	var name = sel.text()
+	var input = $(_this).parents('.list_tr').find('.attr_title')
+	var old_val = input.val()
+
+    var flat = false
+	if(old_val==''){
+	    flat = true 
+	}else{
+		$(_this).find('option').each(function (){ 
+			if($(this).text()==old_val){
+			    flat = true 
+			}
+        });
+	}
+	
+	if(flat){
+		input.val(name)
+		console.log(sel.attr('data-must'))
+		$(_this).parents('.list_tr').find("input[type='radio'][value='"+sel.attr('data-must')+"']").attr("checked",true); 
+		$(_this).parents('.list_tr').find('.remark').val(sel.attr('data-remark'))
+		$(_this).parents('.list_tr').find('.type').val(sel.attr('data-type'))
+	}
+}
+function page(){
+	var val = $('input[name="page"]:checked').val()
+	if(val==1){
+		$('#page_param').show()
+	}else{
+		$('#page_param').hide()
+	}
+}
+function type(){
+	var val = $('input[name="type"]:checked').val()
+
+	if(val=='select'){
+		$('#condition').show()
+		$('#order').show()
+		$('#page').show()
+		$('#save').hide()
+	}else if(val=='add'){
+		$('#condition').hide()
+		$('#order').hide()
+		$('#page').hide()
+		$('#save').show()
+	}else if(val=='del'){
+		$('#condition').show()
+		$('#order').hide()
+		$('#page').hide()
+		$('#save').hide()
+	}else if(val=='update'){
+		$('#condition').show()
+		$('#order').hide()
+		$('#page').hide()
+		$('#save').show()
+	}
+}
+</script>
+</block>

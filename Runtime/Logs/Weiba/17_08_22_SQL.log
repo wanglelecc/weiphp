@@ -1,0 +1,142 @@
+[ 2017-08-22T08:10:21+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/lists.html&mdm=358
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'weiba' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_weiba_category` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_weiba` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`weiba_name`,`cid`,`thread_count`,`follower_count` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:10:34+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Wap/index.html
+SQL: SELECT * FROM `wp_weiba` WHERE ( is_del=1 OR status=0 AND token="gh_268db5519a17" )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_weiba_post` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_weiba_post` WHERE `is_del` = 0 AND `is_index` = 1 AND `token` = 'gh_268db5519a17' ORDER BY index_order asc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT a.* FROM `wp_weiba_post` a, `wp_weiba` b WHERE a.weiba_id=b.id AND ( b.`is_del` = 0 ) AND ( b.`status` = 1 ) AND ( a.`is_del` = 0 ) AND ( a.`token` = 'gh_268db5519a17' ) ORDER BY a.read_count desc,a.reply_count desc LIMIT 20 [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:10:44+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Wap/index.html
+SQL: SELECT `uid` FROM `wp_apps_follow` WHERE `openid` = '-1' AND `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_weiba` WHERE ( is_del=1 OR status=0 AND token="gh_268db5519a17" )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_weiba_post` WHERE `is_del` = 0 AND `is_index` = 1 AND `token` = 'gh_268db5519a17' ORDER BY index_order asc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT a.* FROM `wp_weiba_post` a, `wp_weiba` b WHERE a.weiba_id=b.id AND ( b.`is_del` = 0 ) AND ( b.`status` = 1 ) AND ( a.`is_del` = 0 ) AND ( a.`token` = 'gh_268db5519a17' ) ORDER BY a.read_count desc,a.reply_count desc LIMIT 20 [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:10:52+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Wap/index.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='159' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_weiba` WHERE ( is_del=1 OR status=0 AND token="gh_268db5519a17" )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_weiba_post` WHERE `is_del` = 0 AND `is_index` = 1 AND `token` = 'gh_268db5519a17' ORDER BY index_order asc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT a.* FROM `wp_weiba_post` a, `wp_weiba` b WHERE a.weiba_id=b.id AND ( b.`is_del` = 0 ) AND ( b.`status` = 1 ) AND ( a.`is_del` = 0 ) AND ( a.`token` = 'gh_268db5519a17' ) ORDER BY a.read_count desc,a.reply_count desc LIMIT 20 [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:11:06+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Wap/post.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='159' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_weiba` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' ORDER BY id  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:12:00+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/add/model/1148/mdm/358.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1148 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' ORDER BY id asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:12:16+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','Weiba','1503360736','http://wechat02.56br.com/index.php?s=/w16/Weiba/Weiba/add.html
+POST: array (
+  \'cid\' => \'0\',
+  \'weiba_name\' => \'灌水区\',
+  \'logo\' => \'\',
+  \'intro\' => \'\',
+  \'who_can_post\' => \'0\',
+  \'recommend\' => \'1\',
+  \'notify\' => \'\',
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1148 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1148 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_weiba` WHERE `weiba_name` = '灌水区' AND `token` = 'gh_268db5519a17' AND `cid` = '0' AND `id` <> null LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_weiba` (`cid`,`weiba_name`,`logo`,`intro`,`who_can_post`,`recommend`,`notify`,`uid`,`ctime`,`token`) VALUES ('0','灌水区','0','','0','1','','1','1503360736','gh_268db5519a17') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:12:18+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/lists/model/weiba.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`weiba_name`,`cid`,`thread_count`,`follower_count` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:12:29+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Wap/index.html
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='159' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_weiba` WHERE ( is_del=1 OR status=0 AND token="gh_268db5519a17" )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_weiba_post` WHERE `is_del` = 0 AND `is_index` = 1 AND `token` = 'gh_268db5519a17' ORDER BY index_order asc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT a.* FROM `wp_weiba_post` a, `wp_weiba` b WHERE a.weiba_id=b.id AND ( b.`is_del` = 0 ) AND ( b.`status` = 1 ) AND ( a.`is_del` = 0 ) AND ( a.`token` = 'gh_268db5519a17' ) ORDER BY a.read_count desc,a.reply_count desc LIMIT 20 [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:12:36+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Category/lists.html&mdm=358|360
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'weiba_category' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:12:38+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/lists.html&mdm=358|361
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'weiba_post' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`weiba_name` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`weiba_id`,`post_uid`,`read_count`,`reply_count`,`post_time` FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:12:40+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/indexLists.html&mdm=358|364
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`weiba_name` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`weiba_id`,`post_uid`,`read_count`,`reply_count`,`post_time` FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' AND `is_index` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' AND `is_index` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T08:12:41+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/config.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'post' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Weiba' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:12:44+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/config.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'post' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Weiba' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:12:46+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/lists.html&mdm=358|359
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`weiba_name`,`cid`,`thread_count`,`follower_count` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:12:46+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Category/lists.html&mdm=358|360
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:12:48+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/lists.html&mdm=358|361
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`weiba_name` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`weiba_id`,`post_uid`,`read_count`,`reply_count`,`post_time` FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T08:12:49+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Post/indexLists.html&mdm=358|364
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`weiba_name` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`weiba_id`,`post_uid`,`read_count`,`reply_count`,`post_time` FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' AND `is_index` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba_post` WHERE `token` = 'gh_268db5519a17' AND `is_index` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:42:26+08:00 ] 192.168.1.169 /index.php?s=/w16/Weiba/Weiba/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `wp_weiba_category` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`weiba_name`,`cid`,`thread_count`,`follower_count` FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_weiba` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0003s ]
+

@@ -1,0 +1,187 @@
+<extend name="Home@base/base" />
+
+<block name="body">
+<div class="main-title cf">
+	<h2>{$title}</h2>
+</div>
+<!-- 标签页导航 -->
+<div id="main-container" class="tab-wrap">
+	<volist name="list" id="api">
+	<h2 class="mt10 mb10"><a name="content{$api.id}">{$api.title}</a></h2>
+	<div class="tab-content api-style">
+		<div class="item-label">接口地址: {:SITE_URL}/index.php?s=/Api/Api/index/mod/{$api.mod}/act/{$api.url}/access_token/ACCESS_TOKEN</div> <div
+			class="item-label">请求类型: {$api.method}</div> <div
+			class="item-label">接口类型: {$api.type}</div>
+		<notempty name="api.condtion">
+		<div class="form-item cf" id="conditon">
+			<label class="item-label">查询条件<span class="check-tips">（请求参数）</span></label>
+			<div style="margin: 15px 0;" class="specTable data-table">
+				<table cellspacing="1" cellpadding="0">
+					<thead>
+						<tr>
+							<th style="width: 150px">字段</th>
+							<th style="width: 150px">名称</th>
+							<th style="width: 150px">条件</th>
+							<th style="width: 150px">必填</th>
+							<th style="width: 100px">格式</th>
+							<th style="width: 150px">描述</th>
+						</tr>
+					</thead>
+					<tbody id="list_data_tbody">
+						<volist name="api.condtion" id="cd" key="sort">
+						<tr>
+						<td style="width: 150px">{$cd.name}</td>
+						<td style="width: 150px">{$cd.title}</td>
+						<td style="width: 150px">{$cd.extra}</td>
+						<td style="width: 150px">{$cd.is_must}</td>
+						<td style="width: 100px">{$cd.type}</td>
+						<td style="width: 150px">{$cd.remark}</td>
+						</tr>
+						</volist>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</notempty>
+		<notempty name="api.order">
+		<div class="form-item cf" id="order">
+			<label class="item-label">排序字段<span class="check-tips">（请求参数）</span></label>
+			<div style="margin: 15px 0;" class="specTable data-table">
+				<table cellspacing="1" cellpadding="0">
+					<thead>
+						<tr>
+							<th style="width: 150px">字段</th>
+							<th style="width: 150px">名称</th>
+							<th style="width: 150px">排序方式</th>
+							<th style="width: 150px">必填</th>
+						</tr>
+					</thead>
+					<tbody id="list_data_tbody">
+						<volist name="api.order" id="cd" key="sort">
+						<tr>
+						<td style="width: 150px">{$cd.name}</td>
+						<td style="width: 150px">{$cd.title}</td>
+						<td style="width: 150px">{$cd.extra}</td>
+						<td style="width: 150px">{$cd.is_must}</td>
+						</tr>
+						</volist>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</notempty>
+		<notempty name="api.page">
+		<div class="form-item cf" id="page">
+			<label class="item-label">分页参数<span class="check-tips">（请求参数）</span></label>
+			<div style="margin: 15px 0;" class="specTable data-table"
+				id="page_param">
+				<table cellspacing="1" cellpadding="0">
+					<thead>
+						<tr>
+							<th style="width: 150px">字段</th>
+							<th style="width: 150px">名称</th>
+							<th style="width: 150px">必填</th>
+							<th style="width: 100px">格式</th>
+							<th style="width: 150px">描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>page_direction</td>
+							<td>翻页方向</td>
+							<td>否</td>
+							<td>String</td>
+							<td>上一页：previous 下一页： next, 默认值：next</td>
+						</tr>
+						<tr>
+							<td>page_limit</td>
+							<td>每页数量</td>
+							<td>否</td>
+							<td>Int</td>
+							<td>每页最多返回记录数，默认10条</td>
+						</tr>
+						<tr>
+							<td>page_number</td>
+							<td>页码数</td>
+							<td>否</td>
+							<td>Int</td>
+							<td>默认为0时使用page_direction字段控制，大于0时page_direction失败，使用当前指定页码数</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</notempty>
+		<notempty name="api.save">
+		<div class="form-item cf" id="save">
+			<label class="item-label">保存内容<span class="check-tips">（请求参数）</span></label>
+			<div style="margin: 15px 0;" class="specTable data-table">
+				<table cellspacing="1" cellpadding="0">
+					<thead>
+						<tr>
+							<th style="width: 150px">字段</th>
+							<th style="width: 150px">名称</th>
+							<th style="width: 150px">必填</th>
+							<th style="width: 100px">格式</th>
+							<th style="width: 150px">描述</th>
+						</tr>
+					</thead>
+					<tbody id="list_data_tbody">
+						<volist name="api.save" id="cd" key="sort">
+						<tr>
+						<td style="width: 150px">{$cd.name}</td>
+						<td style="width: 150px">{$cd.title}</td>
+						<td style="width: 150px">{$cd.is_must}</td>
+						<td style="width: 100px">{$cd.type}</td>
+						<td style="width: 150px">{$cd.remark}</td>
+						</tr>
+						</volist>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</notempty>
+
+		<div class="form-item cf" id="return">
+			<label class="item-label">返回值<span class="check-tips">（每个接口都会返回固定字段：api_status和api_msg。有多条记录返回时，业务数据会以数组的方式返回）</span></label>
+			<div style="margin: 15px 0;" class="specTable data-table">
+				<table cellspacing="1" cellpadding="0">
+					<thead>
+						<tr>
+							<th style="width: 150px">字段</th>
+							<th style="width: 150px">名称</th>
+							<th style="width: 100px">格式</th>
+							<th style="width: 150px">描述</th>
+						</tr>
+					</thead>
+					<tbody id="list_data_tbody">
+						<tr>
+							<td>api_status</td>
+							<td>接口状态</td>
+							<td>Int</td>
+							<td>0失败 1成功</td>
+						</tr>
+						<tr>
+							<td>api_msg</td>
+							<td>接口提示语</td>
+							<td>String</td>
+							<td>api_status=0时返回失败原因，api_status=0时为空</td>
+						</tr>
+						<tr>
+							<td>data</td>
+							<td>业务数据</td>
+							<td>Array</td>
+							<td>当接口类型为查询时，会以数组的方式返回查询的内容</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	</volist>
+</div>
+
+</block>

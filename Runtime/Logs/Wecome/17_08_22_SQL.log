@@ -1,0 +1,28 @@
+[ 2017-08-22T08:17:53+08:00 ] 192.168.1.169 /index.php?s=/w16/Wecome/Wecome/config.html&mdm=45
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:17:59+08:00 ] 192.168.1.169 /index.php?s=/w16/Wecome/Wecome/config.html&mdm=45
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:33:59+08:00 ] 192.168.1.169 /index.php?s=/w16/Wecome/Wecome/config.html&mdm=45
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:44:23+08:00 ] 192.168.1.169 /index.php?s=/w16/Wecome/Wecome/config.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wecome' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Wecome' LIMIT 1   [ RunTime:0.0003s ]
+

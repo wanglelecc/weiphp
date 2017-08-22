@@ -1,0 +1,10 @@
+<?php
+//000000086400a:11:{s:2:"id";s:1:"3";s:4:"name";s:4:"menu";s:5:"title";s:12:"系统菜单";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:83:"["menu_type","pid","title","url_type","addon_name","url","target","is_hide","sort"]";s:9:"list_grid";s:168:"title:菜单名
+menu_type:菜单类型
+addon_name:插件名
+url:外链
+target:打开方式
+is_hide:隐藏
+sort:排序号
+ids:操作:[EDIT]|编辑,[DELETE]|删除";s:8:"list_row";s:2:"20";s:10:"search_key";s:0:"";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:4:"Core";s:8:"file_md5";s:32:"bd3840c2b69a9d8819b80accd0be30ea";}
+?>

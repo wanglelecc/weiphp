@@ -1,0 +1,12 @@
+page{line-height: 1.5}
+.banner image{width: 100%;}
+.article_item{display: flex;padding: 30rpx;background: #fff;border-bottom: 1px solid #e3e3e3}
+.article_item image{width: 160rpx;height: 160rpx;margin-right: 30rpx;}
+.article_item_cont{flex: 1;color: #656565;font-size: 24rpx}
+.article_item_cont .title{font-size: 30rpx;color: #000;}
+.ellipse{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   -webkit-line-clamp: 3;   -webkit-box-orient: vertical;
+}

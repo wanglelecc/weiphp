@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS `wp_shop_coupon` (
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+`title`  varchar(30) NULL  COMMENT '优惠券名称',
+`num`  int(10) NULL  COMMENT '发放量',
+`money`  decimal(11,2) NULL  COMMENT '面值',
+`money_max`  decimal(11,2) NULL  COMMENT '最大面值',
+`is_money_rand`  tinyint(2) NULL  COMMENT '面值是否随机',
+`order_money`  decimal(11,2) NULL  COMMENT '订单金额',
+`limit_num`  char(50) NULL  COMMENT '每人限领',
+`start_time`  int(10) NULL  COMMENT '生效时间',
+`end_time`  int(10) NULL  COMMENT '过期时间',
+`limit_goods`  tinyint(2) NULL  COMMENT '可适用商品',
+`limit_goods_ids`  varchar(100) NULL  COMMENT '指定的商品',
+`is_market_price`  tinyint(2) NULL  COMMENT '仅原价购买商品时可用 ',
+`content`  text NULL  COMMENT '使用说明',
+`status`  tinyint(2) NULL  DEFAULT 1 COMMENT '状态',
+`collect_count`  int(10) NULL  COMMENT '领取数',
+`use_count`  int(10) NULL  COMMENT '已使用数',
+`manager_id`  int(10) NULL  COMMENT '管理员ID',
+`token`  varchar(100) NULL  COMMENT 'Token',
+`cTime`  int(10) NULL  COMMENT '创建时间',
+`member`  varchar(100) NULL  COMMENT '选择人群',
+`type`  char(10) NULL  COMMENT '优惠券类型',
+`is_del`  int(10) NULL  COMMENT '是否删除',
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci CHECKSUM=0 ROW_FORMAT=DYNAMIC DELAY_KEY_WRITE=0;
+INSERT INTO `wp_model` (`name`,`title`,`need_pk`,`field_sort`,`list_grid`,`list_row`,`search_key`,`engine_type`,`addon`,`file_md5`) VALUES ('shop_coupon','代金券','1','["title","num","money","money_max","is_money_rand","order_money","limit_num","start_time","end_time","limit_goods","limit_goods_ids","is_market_price","content","member","type"]','title:代金券名称\r\nmoney:面值\r\nlimit_num:领取限制\r\nstart_time:有效期\r\ncollect_count:已领取\r\nuse_count:已使用\r\nids:操作:preview?id=[id]|预览,lists?_controller=Sn&target_id=[id]|领取记录,sncode_lists?id=[id]|核销记录,[EDIT]|编辑,[DELETE]|删除,index&_addons=ShopCoupon&_controller=Wap&id=[id]|复制链接','10','title:请输入代金券名称搜索','MyISAM','ShopCoupon','642443f8ce2a8ecec1efefd5fa110f78');

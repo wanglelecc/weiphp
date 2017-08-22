@@ -1,0 +1,18 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="main-title cf">
+        <h2>新增 [{$model['title']}]</h2>
+    </div>
+    <!-- 标签页导航 -->
+<div class="tab-wrap">
+    <div class="tab-content">
+    <!-- 表单 -->
+    <weiphp:form model="menu" action="form_action" method="post" id="form_id">
+    <weiphp:input name="menu_type" is_custom="1"><input type="hidden" name="menu_type" value="1" /></weiphp:input>
+    <weiphp:input name="pid" is_custom="1"><input type="hidden" name="pid" value="{$pid}" /><label class="item-label">上级菜单：{$p_title}</label></weiphp:input>
+    
+    </weiphp:form>
+    </div>
+</div>
+</block>

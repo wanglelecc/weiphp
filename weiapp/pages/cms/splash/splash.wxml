@@ -1,0 +1,5 @@
+<!--闪屏-->
+<view wx:if="{{splash}}" class="splash">
+  <image style="width:{{wW}};height:{{wH}}" src="/images/splash.jpg"></image>
+  <view class="splash_time" bindtap="nextTap">{{splashTime}} 跳过</view>
+</view>

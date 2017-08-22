@@ -1,0 +1,15 @@
+[ 2017-08-22T08:10:10+08:00 ] 192.168.1.169 /index.php?s=/w16/Coupon/Coupon/lists.html&mdm=356
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_sn_code` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wp_coupon` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'coupon' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `wp_coupon` WHERE `token` = 'gh_268db5519a17' AND `is_del` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_coupon` WHERE `token` = 'gh_268db5519a17' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:34:17+08:00 ] 192.168.1.169 /index.php?s=/w16/Coupon/Coupon/lists.html&mdm=356
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `wp_coupon` WHERE `token` = 'gh_268db5519a17' AND `is_del` = 0 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_coupon` WHERE `token` = 'gh_268db5519a17' AND `is_del` = 0 LIMIT 1   [ RunTime:0.0002s ]
+

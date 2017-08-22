@@ -1,0 +1,22 @@
+<extend name="Home@Base/common" />
+<block name="body">
+  <div class="span9 page_message">
+    <section id="contents"> <include file="Home@Addons/_nav" />
+      <div class="tab-content"> 
+        <!-- 表单 -->
+        <weiphp:form model="form_model" action="form_action" method="form_method" id="form_id" class="form_class">
+          <weiphp:input name='date' title="日期" type="date" placeholder="请选择日期" remark="日期很重要"></weiphp:input>
+          <weiphp:input name='select' title="下拉选择" type="select" remark="选择很重要" options="0:音乐;1:旅游;2:足球"></weiphp:input>
+          <weiphp:input name='textarea' is_custom="1" >
+          <div class="form-item cf" name="keyword" after="select">
+            <label class="item-label"><span class="need_flag">*</span>关键词</label>
+            <div class="controls">
+              <input type="text" class="text input-large" name="keyword" value="{$form_data.textarea}">
+            </div>
+          </div>
+          </weiphp:input>
+        </weiphp:form>
+      </div>
+    </section>
+  </div>
+</block>

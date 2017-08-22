@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+websocket收发消息测试
+</body>
+</html>
+<script>
+function start(){
+	alert('start');
+	ws = new WebSocket("ws://localhost:2346");
+	ws.onopen = function() {
+	    alert("连接成功");
+	    ws.send('tom');
+	    alert("给服务端发送一个字符串：tom");
+	};
+	ws.onmessage = function(e) {
+	    alert("收到服务端的消息：" + e.data);
+	};
+}
+start();
+</script>

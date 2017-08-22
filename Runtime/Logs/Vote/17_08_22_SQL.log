@@ -1,0 +1,37 @@
+[ 2017-08-22T08:33:56+08:00 ] 192.168.1.169 /index.php?s=/w16/Vote/Vote/lists.html&mdm=17
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'vote' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'vote_option' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'vote_log' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 95 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_vote` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`keyword`,`title`,`type`,`is_img`,`vote_count` FROM `wp_vote` WHERE `token` = 'gh_268db5519a17' ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_vote` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:34:20+08:00 ] 192.168.1.169 /index.php?s=/w16/Vote/Vote/lists.html&mdm=17
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 95 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`title`,`type`,`is_img`,`vote_count` FROM `wp_vote` WHERE `token` = 'gh_268db5519a17' ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_vote` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:34:46+08:00 ] 192.168.1.169 /index.php?s=/w16/Vote/Vote/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 95 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:34:53+08:00 ] 192.168.1.169 /index.php?s=/w16/Vote/ShopVote/lists.html&mdm=17|345
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'shop_vote' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_shop_vote` [ RunTime:0.0016s ]
+SQL: SELECT `title`,`select_type`,`start_time`,`end_time`,`remark`,`id` FROM `wp_shop_vote` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_shop_vote` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:34:55+08:00 ] 192.168.1.169 /index.php?s=/w16/Vote/ShopVote/add/model/163/mdm/17%7C345.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 163 LIMIT 1   [ RunTime:0.0003s ]
+

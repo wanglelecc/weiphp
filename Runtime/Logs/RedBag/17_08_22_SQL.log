@@ -1,0 +1,8 @@
+[ 2017-08-22T08:10:14+08:00 ] 192.168.1.169 /index.php?s=/w16/RedBag/RedBag/lists.html&mdm=356|28
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'redbag' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_redbag` [ RunTime:0.0016s ]
+SQL: SELECT `act_name`,`send_name`,`total_amount`,`min_value`,`max_value`,`total_num`,`id` FROM `wp_redbag` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_redbag` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0001s ]
+

@@ -1,0 +1,15 @@
+<extend name="Public/base" />
+
+<block name="body">
+    <div class="main-title cf">
+        <h2>编辑 [{$model['title']}]</h2>
+    </div>
+    <!-- 标签页导航 -->
+<div class="tab-wrap">
+
+    <div class="tab-content">
+    <!-- 表单 -->
+    <weiphp:form model="menu" action="form_action" method="post" id="form_id"></weiphp:form>
+    </div>
+</div>
+</block>

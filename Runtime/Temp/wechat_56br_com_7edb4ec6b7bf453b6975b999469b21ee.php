@@ -1,0 +1,9 @@
+<?php
+//000000086400a:11:{s:2:"id";s:2:"82";s:4:"name";s:11:"sport_award";s:5:"title";s:12:"抽奖奖品";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:81:"["award_type","name","count","img","price","score","explain","coupon_id","money"]";s:9:"list_grid";s:250:"id:6%编号
+name:23%奖项名称
+img|get_img_html:8%商品图片
+price:8%商品价格
+explain:24%奖品说明
+count:8%奖品数量
+ids:20%操作:[EDIT]|编辑,[DELETE]|删除,getlistByAwardId?awardId=[id]&_controller=LuckyFollow|中奖者列表";s:8:"list_row";s:2:"20";s:10:"search_key";s:26:"name:请输入抽奖名称";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:4:"Draw";s:8:"file_md5";s:32:"89c94f784c4bd138e64028d092fea8db";}
+?>

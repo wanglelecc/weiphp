@@ -1,0 +1,198 @@
+[ 2017-08-22T08:18:56+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/lists.html&mdm=45|48
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'auto_reply' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_auto_reply` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'text' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'text' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:19:00+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/type/text.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:19:20+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/text.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','AutoReply','1503361160','http://wechat02.56br.com/index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/text.html
+POST: array (
+  \'keyword\' => \'哎\',
+  \'content\' => \'晕晕晕晕晕晕晕也\',
+  \'voice_id\' => \'\',
+  \'video_id\' => \'\',
+); 
+') [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_auto_reply` (`keyword`,`content`,`voice_id`,`video_id`,`msg_type`,`manager_id`,`token`) VALUES ('哎','晕晕晕晕晕晕晕也','0','0','text','1','gh_268db5519a17') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wp_keyword` [ RunTime:0.0017s ]
+SQL: DELETE FROM `wp_keyword` WHERE `addon` = 'AutoReply' AND `aim_id` = 33 AND `extra_text` = '' AND `extra_int` = 0 [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_keyword` (`addon`,`aim_id`,`extra_text`,`extra_int`,`token`,`cTime`,`keyword_type`,`keyword`,`keyword_length`) VALUES ('AutoReply','33','','0','gh_268db5519a17','1503361160','0','哎','3') [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:19:22+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'text' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'text' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:19:39+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/news.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'news' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'news' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:20:43+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/type/news.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:20:54+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/news.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','AutoReply','1503361254','http://wechat02.56br.com/index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/news.html
+POST: array (
+  \'keyword\' => \'r\',
+  \'group_id\' => \'196\',
+  \'voice_id\' => \'\',
+  \'video_id\' => \'\',
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_auto_reply` (`keyword`,`group_id`,`voice_id`,`video_id`,`msg_type`,`manager_id`,`token`) VALUES ('r','196','0','0','news','1','gh_268db5519a17') [ RunTime:0.0009s ]
+SQL: DELETE FROM `wp_keyword` WHERE `addon` = 'AutoReply' AND `aim_id` = 34 AND `extra_text` = '' AND `extra_int` = 0 [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_keyword` (`addon`,`aim_id`,`extra_text`,`extra_int`,`token`,`cTime`,`keyword_type`,`keyword`,`keyword_length`) VALUES ('AutoReply','34','','0','gh_268db5519a17','1503361254','0','r','1') [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:20:56+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/news.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'news' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'news' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wp_material_news` WHERE `group_id` = 196  [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:21:19+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:21:22+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:21:39+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','AutoReply','1503361299','http://wechat02.56br.com/index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/image.html
+POST: array (
+  \'keyword\' => \'a\',
+  \'image_id\' => \'0\',
+  \'image_material\' => \'147\',
+  \'voice_id\' => \'\',
+  \'video_id\' => \'\',
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wp_auto_reply` (`keyword`,`image_id`,`image_material`,`voice_id`,`video_id`,`msg_type`,`manager_id`,`token`) VALUES ('a','0','147','0','0','image','1','gh_268db5519a17') [ RunTime:0.0004s ]
+SQL: DELETE FROM `wp_keyword` WHERE `addon` = 'AutoReply' AND `aim_id` = 35 AND `extra_text` = '' AND `extra_int` = 0 [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_keyword` (`addon`,`aim_id`,`extra_text`,`extra_int`,`token`,`cTime`,`keyword_type`,`keyword`,`keyword_length`) VALUES ('AutoReply','35','','0','gh_268db5519a17','1503361299','0','a','1') [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:21:41+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cover_url` FROM `wp_material_image` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:21:53+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:22:44+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0009s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','AutoReply','1503361364','http://wechat02.56br.com/index.php?s=/w16/AutoReply/AutoReply/add/model/11/type/image.html
+POST: array (
+  \'keyword\' => \'b\',
+  \'image_id\' => \'940\',
+  \'image_material\' => \'\',
+  \'voice_id\' => \'\',
+  \'video_id\' => \'\',
+); 
+') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_auto_reply` (`keyword`,`image_id`,`image_material`,`voice_id`,`video_id`,`msg_type`,`manager_id`,`token`) VALUES ('b','940','0','0','0','image','1','gh_268db5519a17') [ RunTime:0.0003s ]
+SQL: DELETE FROM `wp_keyword` WHERE `addon` = 'AutoReply' AND `aim_id` = 36 AND `extra_text` = '' AND `extra_int` = 0 [ RunTime:0.0009s ]
+SQL: INSERT INTO `wp_keyword` (`addon`,`aim_id`,`extra_text`,`extra_int`,`token`,`cTime`,`keyword_type`,`keyword`,`keyword_length`) VALUES ('AutoReply','36','','0','gh_268db5519a17','1503361364','0','b','1') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:22:46+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 940 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cover_url` FROM `wp_material_image` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:23:05+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/edit/id/36/model/auto_reply/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_auto_reply` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:23:35+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/edit/model/auto_reply/type/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','AutoReply','1503361415','http://wechat02.56br.com/index.php?s=/w16/AutoReply/AutoReply/edit/model/auto_reply/type/image.html
+POST: array (
+  \'keyword\' => \'b\',
+  \'image_id\' => \'0\',
+  \'image_material\' => \'140\',
+  \'voice_id\' => \'0\',
+  \'video_id\' => \'0\',
+  \'id\' => \'36\',
+); 
+') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_auto_reply` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wp_auto_reply` SET `keyword`='b',`image_id`='0',`image_material`='140',`voice_id`='0',`video_id`='0' WHERE `id` = 36 [ RunTime:0.0004s ]
+SQL: DELETE FROM `wp_keyword` WHERE `addon` = 'AutoReply' AND `aim_id` = 36 AND `extra_text` = '' AND `extra_int` = 0 [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_keyword` (`addon`,`aim_id`,`extra_text`,`extra_int`,`token`,`cTime`,`keyword_type`,`keyword`,`keyword_length`) VALUES ('AutoReply','36','','0','gh_268db5519a17','1503361415','0','b','1') [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:23:37+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/image.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'image' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cover_url` FROM `wp_material_image` WHERE `id` = 140 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cover_url` FROM `wp_material_image` WHERE `id` = 147 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:23:45+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/voice.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'voice' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'voice' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:23:52+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/add/type/voice.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-22T08:24:37+08:00 ] 192.168.1.169 /index.php?s=/w16/AutoReply/AutoReply/video.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`keyword`,`msg_type`,`content`,`group_id`,`image_id`,`manager_id`,`token`,`image_material`,`voice_id`,`video_id` FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'video' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_auto_reply` WHERE `token` = 'gh_268db5519a17' AND `msg_type` = 'video' LIMIT 1   [ RunTime:0.0002s ]
+

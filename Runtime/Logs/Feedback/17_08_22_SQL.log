@@ -1,0 +1,8 @@
+[ 2017-08-22T08:41:44+08:00 ] 192.168.1.169 /index.php?s=/w16/Feedback/Feedback/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'feedback' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_feedback` [ RunTime:0.0012s ]
+SQL: SELECT `username`,`product`,`from`,`area`,`score`,`is_dev`,`cTime`,`id` FROM `wp_feedback` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_feedback` LIMIT 1   [ RunTime:0.0001s ]
+

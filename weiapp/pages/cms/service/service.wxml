@@ -1,0 +1,10 @@
+<view class="service">
+   <view wx:for="{{service}}" class="service_item">
+      <view class="service_title">
+          <image src="{{item.img}}" mode="aspectFit"></image><text>{{item.title}}</text>
+      </view>
+      <view class="service_content">
+        {{item.content}}
+      </view>
+   </view>
+</view>

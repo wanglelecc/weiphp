@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="weishop_title">会员卡</view>
+
+    <view class="btn-area">
+      <button bindtap="addCard">激活会员卡</button>
+    </view>
+
+    <view class="btn-area">
+      <button bindtap="show">查看会员卡</button>
+    </view>
+
+</view>

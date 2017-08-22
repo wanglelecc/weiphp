@@ -1,0 +1,361 @@
+[ 2017-08-22T08:24:47+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html&mdm=45|47
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wp_custom_menu` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:24:52+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:25:18+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','CustomMenu','1503361518','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'0\',
+  \'title\' => \'aaaa\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'0\',
+); 
+') [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_custom_menu` (`pid`,`title`,`from`,`material`,`url`,`keyword`,`pagepath`,`appurl`,`rule_id`,`id`,`token`) VALUES ('0','aaaa','1','text:10','','','','','0','0','gh_268db5519a17') [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:25:20+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:25:24+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:25:34+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361534','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'0\',
+  \'title\' => \'bbbb\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'0\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_custom_menu` (`pid`,`title`,`from`,`material`,`url`,`keyword`,`pagepath`,`appurl`,`rule_id`,`id`,`token`) VALUES ('0','bbbb','1','text:10','','','','','0','0','gh_268db5519a17') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:25:36+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:25:41+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:25:55+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361555','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'0\',
+  \'title\' => \'cccc\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'0\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_custom_menu` (`pid`,`title`,`from`,`material`,`url`,`keyword`,`pagepath`,`appurl`,`rule_id`,`id`,`token`) VALUES ('0','cccc','1','text:10','','','','','0','0','gh_268db5519a17') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:25:56+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:26:01+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:26:15+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361575','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'0\',
+  \'title\' => \'dddd\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'0\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_custom_menu` (`pid`,`title`,`from`,`material`,`url`,`keyword`,`pagepath`,`appurl`,`rule_id`,`id`,`token`) VALUES ('0','dddd','1','text:10','','','','','0','0','gh_268db5519a17') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:26:17+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:26:23+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:26:35+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361595','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'0\',
+  \'title\' => \'eeee\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'0\',
+); 
+') [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_custom_menu` (`pid`,`title`,`from`,`material`,`url`,`keyword`,`pagepath`,`appurl`,`rule_id`,`id`,`token`) VALUES ('0','eeee','1','text:10','','','','','0','0','gh_268db5519a17') [ RunTime:0.0005s ]
+
+[ 2017-08-22T08:26:37+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:26:41+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/id/120/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `id` = 120 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:26:48+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361608','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'117\',
+  \'title\' => \'dddd\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'type\' => \'click\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'120\',
+); 
+') [ RunTime:0.0004s ]
+SQL: UPDATE `wp_custom_menu` SET `pid`='117',`title`='dddd',`from`='1',`material`='text:10',`url`='',`type`='click',`keyword`='',`pagepath`='',`appurl`='',`rule_id`='0',`id`='120' WHERE `id` = 120 [ RunTime:0.0006s ]
+SQL: SELECT `from` FROM `wp_custom_menu` WHERE `id` = 117 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wp_custom_menu` SET `from`='0' WHERE `id` = 117 [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:26:51+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:26:55+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/id/121/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `id` = 121 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:27:00+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','192.168.1.169','CustomMenu','1503361620','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add.html
+POST: array (
+  \'pid\' => \'118\',
+  \'title\' => \'eeee\',
+  \'from\' => \'1\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+  \'url\' => \'\',
+  \'type\' => \'click\',
+  \'keyword\' => \'\',
+  \'pagepath\' => \'\',
+  \'appurl\' => \'\',
+  \'rule_id\' => \'0\',
+  \'id\' => \'121\',
+); 
+') [ RunTime:0.0003s ]
+SQL: UPDATE `wp_custom_menu` SET `pid`='118',`title`='eeee',`from`='1',`material`='text:10',`url`='',`type`='click',`keyword`='',`pagepath`='',`appurl`='',`rule_id`='0',`id`='121' WHERE `id` = 121 [ RunTime:0.0003s ]
+SQL: SELECT `from` FROM `wp_custom_menu` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wp_custom_menu` SET `from`='0' WHERE `id` = 118 [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:27:02+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:27:10+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/send_menu/rule_id/0.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','CustomMenu','1503361629','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/send_menu/rule_id/0.html
+POST: array (
+  \'ids\' => 
+  array (
+    0 => \'117\',
+    1 => \'120\',
+    2 => \'118\',
+    3 => \'121\',
+    4 => \'119\',
+  ),
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0006s ]
+SQL: INSERT INTO `wp_request_log` (`url`,`param`,`md5`,`error_code`,`msg`,`res`,`server_ip`,`cTime`) VALUES ('https://api.weixin.qq.com/cgi-bin/menu/create?access_token=Ml_aWneFxTL3QpHKBNNj-4Rwj4QAS8QjIyKHKM_u1idrjiQfa0gLvOZLhaKAXT0bJJEHw3vL_e42hjmdQebJaWjffPPt_ea6_ZmZ2BlilzMuKvbcwdMqsuESoH3MS9Y0COQdAFALXZ','{\"button\":[{\"name\":\"aaaa\",\"sub_button\":[{\"name\":\"dddd\",\"type\":\"click\",\"key\":\"material::\\/text:10\"}]},{\"name\":\"bbbb\",\"sub_button\":[{\"name\":\"eeee\",\"type\":\"click\",\"key\":\"material::\\/text:10\"}]},{\"name\":\"cccc\",\"type\":\"click\",\"key\":\"material::\\/text:10\"}]}','258c2e13f63986fead0e945f11382a3c','0','','array (
+  \'errcode\' => 0,
+  \'errmsg\' => \'ok\',
+)','124.127.144.68','1503361629') [ RunTime:0.0009s ]
+
+[ 2017-08-22T08:27:12+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:27:14+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/custom_lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wp_custom_menu_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wp_custom_menu_rule` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 0 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:27:18+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_area` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_area` ORDER BY pid asc, sort asc  [ RunTime:0.0012s ]
+
+[ 2017-08-22T08:27:50+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','CustomMenu','1503361670','http://wechat02.56br.com/index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+POST: array (
+  \'tag_id\' => \'0\',
+  \'sex\' => \'1\',
+  \'os\' => \'1\',
+  \'area0\' => \'1\',
+  \'area1\' => \'18\',
+  \'area2\' => \'406\',
+  \'area\' => \'1,18,406\',
+  \'lang\' => \'zh_CN\',
+  \'rule_ie\' => \'0\',
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_custom_menu_rule` WHERE `tag_id` = 0 AND `sex` = 1 AND `os` = 1 AND `lang` = 'zh_CN' AND `country` = 1 AND `province` = 18 AND `city` = 406 AND `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_custom_menu_rule` (`tag_id`,`sex`,`os`,`lang`,`country`,`province`,`city`,`token`) VALUES ('0','1','1','zh_CN','1','18','406','gh_268db5519a17') [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:27:52+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/custom_lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu_rule` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0004s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `title`,`id` FROM `wp_area`  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 22 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:27:59+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/22.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 22  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:28:02+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_area` ORDER BY pid asc, sort asc  [ RunTime:0.0013s ]
+
+[ 2017-08-22T08:28:05+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/custom_lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu_rule` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `title`,`id` FROM `wp_area`  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 22 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:28:08+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_area` ORDER BY pid asc, sort asc  [ RunTime:0.0018s ]
+
+[ 2017-08-22T08:28:10+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/custom_lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_custom_menu_rule` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0004s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT `title`,`id` FROM `wp_area`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wp_custom_menu` WHERE `rule_id` = 22 AND `token` = 'gh_268db5519a17' ORDER BY pid asc, sort asc  [ RunTime:0.0003s ]
+
+[ 2017-08-22T08:28:22+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add/rule_id/22.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_custom_menu` WHERE `token` = 'gh_268db5519a17' AND `pid` = 0 AND `rule_id` = 22  [ RunTime:0.0004s ]
+
+[ 2017-08-22T08:28:32+08:00 ] 192.168.1.169 /index.php?s=/w16/CustomMenu/CustomMenu/add_custom_tag.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `title`,`wechat_group_id` FROM `wp_auth_group` WHERE `wechat_group_id` > 0 AND `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid`,`sort` FROM `wp_area` ORDER BY pid asc, sort asc  [ RunTime:0.0013s ]
+

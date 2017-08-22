@@ -1,0 +1,14 @@
+[ 2017-08-22T08:35:35+08:00 ] 192.168.1.169 /index.php?s=/w16/SingIn/SingIn/lists.html&mdm=17|346
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wp_signin_log` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wp_signin_log` WHERE `token` = 'gh_268db5519a17' ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_signin_log` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:35:39+08:00 ] 192.168.1.169 /index.php?s=/w16/SingIn/SingIn/config.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'sing_in' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'sing_in' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'SingIn' LIMIT 1   [ RunTime:0.0005s ]
+

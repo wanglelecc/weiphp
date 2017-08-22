@@ -1,0 +1,13 @@
+[ 2017-08-22T08:35:02+08:00 ] 192.168.1.169 /index.php?s=/w16/Forms/Forms/lists.html&mdm=17|23
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'forms' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_forms` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`finish_tip`,`cTime`,`token`,`password`,`title`,`intro`,`mTime`,`cover`,`keyword`,`can_edit`,`content`,`jump_url`,`template` FROM `wp_forms` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_forms` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:35:05+08:00 ] 192.168.1.169 /index.php?s=/w16/Forms/Forms/add/model/39/mdm/17%7C23.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0009s ]
+

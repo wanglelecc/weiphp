@@ -1,0 +1,2 @@
+/* pages/qrcode/qrcode.wxss */
+image {display: block;margin: 30px auto;}

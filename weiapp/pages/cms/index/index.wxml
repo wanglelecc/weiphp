@@ -1,0 +1,12 @@
+<swiper class="banner" autoplay="true" interval="3000" indicator-dots="true">
+  <swiper-item wx:for="{{banner}}"><image src="{{item}}" mode="aspectFill"></image></swiper-item>
+</swiper>
+<view class="article">
+  <navigator wx:for="{{article}}" class="article_item" url="url?id={{item.id}}">
+    <image src="{{item.img}}"></image>
+    <view class="article_item_cont">
+      <view class="title">{{item.title}}</view>
+      <view class="ellipse">{{item.content}}</view>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,42 @@
+<extend name="Public/base" />
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>微信接口节点管理</h2>
+	</div>
+
+    <div class="tools auth-botton">
+        <a id="add-group" class="btn" href="{:U('createRule?group=wechat')}">新 增</a>
+    </div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+	<table class="">
+    <thead>
+        <tr>
+		<th class="">节点名称</th>
+        <th class="">接口名称</th>
+		<th class="">操作</th>
+		</tr>
+    </thead>
+    <tbody>
+		<notempty name="_list">
+		<volist name="_list" id="vo">
+		<tr>
+			<td><a href="{:U('Rule/editRule?id='.$vo['id'])}">{$vo.name}</a> </td>
+            <td>{$vo.title}</td>
+			<td>
+				<a href="{:U('Rule/changeStatus?method=deleterule&id='.$vo['id'])}" class="confirm ajax-get">删除</a>
+                </td>
+		</tr>
+		</volist>
+		<else/>
+		<td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td>
+		</notempty>
+	</tbody>
+    </table>
+
+	</div>
+    <div class="page">
+        {$_page}
+    </div>
+</block>

@@ -1,0 +1,112 @@
+<extend name="Home@Base/common" />
+
+<block name="body">
+<div class="span9 page_message">
+	<section id="contents">
+      <include file="Home@Addons/_nav" />
+      <div class="tab-content"> 
+	<form action="{:U('config')}" class="form-horizontal" method="post">
+		
+				<div class="form-item cf">
+					<label class="item-label">
+						短信服务商
+					</label>
+							<div class="controls">
+								<select name="config[type]" class='selectType'>
+										<option value="1" <if condition='$data["config"]["type"]["value"] eq 1'>selected = "selected" </if> >云之讯</option>
+										<option value="2" <if condition='$data["config"]["type"]["value"] eq 2'>selected = "selected" </if> >腾讯云</option>
+								</select>
+							</div>
+							<div class='type1'>
+					<label class="item-label" >
+						开发者Account Sid
+					</label>
+							<div class="controls">
+								<input type="text" name="config[accountSid]" class="text input-large" value="{$data.config.accountSid.value}">
+							</div>
+							
+							<label class="item-label">
+						开发者Auth Token
+					</label>
+							<div class="controls">
+								<input type="text" name="config[authToken]" class="text input-large" value="{$data.config.authToken.value}">
+							</div>
+							<label class="item-label">
+						应用Id
+							<span class="check-tips">在服务商平台上应用里面创建获得</span>
+					</label>
+							<div class="controls">
+								<input type="text" name="config[appId]" class="text input-large" value="{$data.config.authToken.value}">
+							</div>
+							<label class="item-label">
+						会员卡手机认证短信模板Id
+							<span class="check-tips">模板格式：您的验证码是{1},请于10分钟内输入正确的验证码</span>
+					</label>
+							<div class="controls">
+								<input type="text" name="config[TemplateId]" class="text input-large" value="{$data.config.TemplateId.value}">
+							</div>
+							</div>
+							<div class='type2'>
+							<label class="item-label">
+						腾讯云appid
+					</label>
+							<div class="controls">
+								<input type="text" name="config[appid]" class="text input-large" value="{$data.config.appid.value}">
+							</div>
+							<label class="item-label">
+						腾讯云appkey
+					</label>
+							<div class="controls">
+								<input type="text" name="config[appkey]" class="text input-large" value="{$data.config.appkey.value}">
+							</div>
+							<label class="item-label">
+						短信签名
+					</label>
+							<div class="controls">
+								<input type="text" name="config[sign]" class="text input-large" value="{$data.config.sign.value}">
+							</div>
+							<label class="item-label">
+						短信模板Id
+							<span class="check-tips">模板格式：您的验证码是${code},请于10分钟内输入正确的验证码</span>
+					</label>
+							<div class="controls">
+								<input type="text" name="config[TtemplateId]" class="text input-large" value="{$data.config.TtemplateId.value}">
+							</div>
+						</div>	
+							
+			<input type="hidden" name="id" value="{$data.id}" readonly>
+			<button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
+		</div>
+		</form>
+      </div>
+    </section>
+ </div>
+</block>
+
+<block name="script">
+<script type="text/javascript" charset="utf-8">
+var type ="{$data.config.type.value}";
+if(type == 2){
+	$('.type1').hide();
+}else{
+	$('.type2').hide();
+}
+
+	$('.selectType').change(function(){
+		if($('.selectType').val() == 2){
+			$('.type2').show();
+			$('.type1').hide();
+		}else{
+			$('.type1').show();
+			$('.type2').hide();
+		}
+	})
+	$(function(){
+		//初始化上传图片插件
+		initUploadImg();
+		initUploadFile();
+		//支持tab
+		showTab();
+	})
+</script>
+</block>

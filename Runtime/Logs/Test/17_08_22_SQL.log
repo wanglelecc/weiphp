@@ -1,0 +1,19 @@
+[ 2017-08-22T08:35:19+08:00 ] 192.168.1.169 /index.php?s=/w16/Test/Test/lists.html&mdm=17|352
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'test' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_test` [ RunTime:0.0011s ]
+SQL: SELECT `keyword`,`keyword_type`,`title`,`id` FROM `wp_test` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_test` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T08:35:22+08:00 ] 192.168.1.169 /index.php?s=/w16/Test/Test/add/model/1137/mdm/17%7C352.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1137 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-22T08:42:41+08:00 ] 192.168.1.169 /index.php?s=/w16/Test/Test/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `keyword`,`keyword_type`,`title`,`id` FROM `wp_test` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_test` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+

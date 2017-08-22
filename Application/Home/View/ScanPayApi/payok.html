@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title><php>echo empty($page_title) ? C('WEB_SITE_TITLE') : $page_title;</php></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/mobile_module.css?v={:SITE_VERSION}" media="all">
+    <script type="text/javascript">
+		//静态变量
+		var SITE_URL = "{:SITE_URL}";
+		var IMG_PATH = "__IMG__";
+		var STATIC_PATH = "__STATIC__";
+		var WX_APPID = "";
+		var	WXJS_TIMESTAMP=''; 
+		var NONCESTR= ''; 
+		var SIGNATURE= ''; 
+	</script>
+    <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="__ROOT__/minify.php?f=__ROOT__/Public/Home/js/prefixfree.min.js,__ROOT__/Public/Home/js/m/dialog.js,__ROOT__/Public/Home/js/m/flipsnap.min.js,__ROOT__/Public/Home/js/m/mobile_module.js&v={:SITE_VERSION}"></script>
+</head>
+
+
+<style type="text/css">
+.tc{text-align: center}
+.f12{font-size: 12px;}
+.mt20{margin-top: 20px;}
+.mb20{margin-bottom: 20px;}
+.warp_box{margin:50px  15px 40px 15px; padding: 10px; }
+.btn_box .btn{ background: #2899e1;color: #fff;border-radius: 3px;}
+.buy_list{overflow: hidden;width: 100%}
+.buy_list li{ float: left;text-align: center;width: 29.3%;margin: 12px 2%;}
+.buy_list li .buy_link{display: block;line-height: 48px;border: 1px solid #2899e1; border-radius: 3px; color: #2899e1;}
+.buy_list li .buy_link.act{background: #2899e1;color: #fff;}
+</style>
+<body>
+<div id="container" class="container">
+    <div class="warp_box">
+        <p>支付成功</p>
+		<p><a href="javascript:void(0)" onClick="WeixinJSBridge.call('closeWindow');">关 闭</a></p>
+    </div>
+</div>   
+</body>
+</html>

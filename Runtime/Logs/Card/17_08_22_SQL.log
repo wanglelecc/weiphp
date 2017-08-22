@@ -1,0 +1,7 @@
+[ 2017-08-22T08:13:03+08:00 ] 192.168.1.169 /index.php?s=/w16/Card/Card/config.html&mdm=15|342
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'card' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'card' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_addons` WHERE `name` = 'Card' LIMIT 1   [ RunTime:0.0005s ]
+

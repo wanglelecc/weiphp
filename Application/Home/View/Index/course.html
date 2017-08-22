@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微商城|微信开发|weiphp|圆梦云科技|微信定制开发|公众号开发|社区开发商|微信商城|互联网软件开发</title>
+    <link href="__CSS__/base.css?v={:SITE_VERSION}" rel="stylesheet">
+    <link href="__STATIC__/video/video-js.min.css" rel="stylesheet">
+
+    <style lang="">
+        *{
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .mr20{margin-right: 20px;}
+        body{background: #eee;}
+        h2{font-size: 24px; font-weight: 400;}
+        .course_box{width: 1200px;margin: 20px auto;}
+        .c_s{box-shadow: 0 0 3px #ccc; }
+        .read_num{color: #999;}
+        .course_top,.course_main{padding: 20px; margin-bottom: 20px;background: #fff;overflow: hidden;position: relative}
+        .course_top .section_contont{margin-left: 470px;}
+        .course_price{font-size: 30px;color: #FF3C00;margin-top: 20px;}
+        .course_pay_btn{ padding: 8px 18px;background:#FF8100;color: #fff; position: absolute;bottom: 20px;left: 490px;}
+        .course_pay_btn:hover{background:#FF3C00;color: #fff; }
+        .course_main_nav{padding: 20px 0;}
+        .course_main_nav a{padding: 4px 16px; color: #444}
+        .course_main_nav a.cur{color: #4097ce;background: #fff;}
+        .course_main .course_main_cont p{text-indent: 2em}
+        .course_list .item{padding: 10px 0;}
+        #ewm{text-align: center}
+        #ewm p{font-size: 20px;}
+    </style>
+<script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
+
+<script type="text/javascript">
+var  IMG_PATH = "__IMG__";
+var  STATIC = "__STATIC__";
+var  ROOT = "__ROOT__";
+</script>
+</head>
+<body>
+    <div class="course_box">
+        <div class="course_top c_s">
+            <div class="section">
+                <img class="fl" width="450" height="250" src="__IMG__/wxxxckq.jpg" alt="">
+                <div class="section_contont">
+                    <h2>小程序卡券开发教程</h2>
+                    <div class="read_num fz12 mb_10">阅读&emsp;{$count}</div>
+                    <p class="fz12">讲师：小袁 (美女工程师开发小程序卡券给你看！)</p>
+                    <p class="fz12">关键词：小程序 卡券 手把手 美女讲师 微信开发</p>
+                    <div class="course_price">￥200.00</div>
+                    <php>if(!$mid) { </php>
+                    <a class="course_pay_btn" href="#ewm">请先登录</a>
+                   <php> }elseif(!$is_pay) { </php>
+                    <a class="course_pay_btn" href="#ewm">付费学习</a>
+                    <php> } else { </php> 
+                    <a class="course_pay_btn" href="###">已付费</a>
+                    <php> } </php> 
+                </div>
+            </div>
+        </div>
+        <div class="course_main_nav">
+            <a class="item cur" href="javascript:">介绍</a>
+            <a class="item" href="javascript:">目录</a>
+        </div>
+        <div class="course_main c_s">
+            <div class="course_main_cont">
+            
+                <p class="mb_10">本课程由圆梦云提供，由于之前提供的小程序基础入门（<a href="http://www.howzhi.com/course/15035">http://www.howzhi.com/course/15035</a>）教程反馈比较好，我们再接再历，
+                推出了小程序的高级教程-卡券开发。本次由凡星的二号女弟子美女小袁主讲（之前有人反馈凡星的普通话听不懂-_-）
+                </p> 
+                <p class="mb_10">之所以出此视频教程，主要是小程序的卡券开发比较麻烦，相关的文档资料又少而且还有问题，因此我们专门非常仔细的，一步一步地
+                    手把手通过视频教大家开发卡券功能。同时也把容易出现的问题和各种坑给大家讲解下，让大家顺利完成开发，如果您在开发过程出现其它问题，也可以在课后留言，我们会给大家解答。
+                </p>
+            </div>
+            <div class="course_main_cont" style="display:none;">
+                <ul class="course_list">
+                    <li class="item"><a href="{:U('course',['id'=>1])}"><span class="mr20">课时1</span> 卡券开发前的准备工作</li></a>
+                    <li class="item"><a href="{:U('course',['id'=>2])}"><span class="mr20">课时2</span> 公众号卡券升级为小程序卡券</li></a>
+                    <li class="item"><a href="{:U('course',['id'=>3])}"><span class="mr20">课时3</span> 在小程序里领取卡券开发</li></a>
+                    <li class="item"><a href="{:U('course',['id'=>4])}"><span class="mr20">课时4</span> 	在小程序里打开卡券</li></a>
+                    
+                </ul>
+            </div>
+        </div>
+        <php>if(!$mid) { </php>
+        
+        <div id="ewm" class="course_main c_s">
+            <img width="300" height="300" src="{$qr_code}" alt="登录二维码">
+            <p>请用微信扫码并关注圆梦云科技有限公司公众号完成登录</p>
+        </div>
+        <php> }elseif(!$is_pay) { </php>
+      
+       <div id="ewm" class="course_main c_s">
+            <script type="text/javascript" src="__STATIC__/qrcode/qrcode.js"></script>
+<script type="text/javascript" src="__STATIC__/qrcode/jquery.qrcode.js"></script>
+<div id="qrCode"></div>
+<script type="text/javascript">
+         var textLink = "{$pay_code}";
+         $('#qrCode').qrcode({width:150,height:150,text:textLink}); 
+ </script>
+            <p>请用微信扫码完成支付</p>
+        </div>   
+         <php> }else { </php>
+        <video id="my-video" class="video-js vjs-big-play-centered" preload="auto" width="1200" height="640"  controls>
+            <source src="{:SITE_URL}/Uploads/{$file_name}.mp4" type="video/mp4">
+        </video>
+        <php> } </php>
+        <div class="course_main c_s">
+            公告内容：圆梦云推荐最近头条新闻两篇-1.百度开发者大会-依然如你所愿，坚持探索、影响世界2.多地现“史上最热一天” 最强高温今将迎最强时段！ 
+        </div> 
+    </div>
+<script type="text/javascript" src="__STATIC__/video/video.min.js"></script>
+<script>
+    $('.course_main_nav .item').click(function(){
+        var index = $(this).index()
+        $('.course_main_nav .item').removeClass('cur')
+        $('.course_main_cont').hide()
+        $(this).addClass('cur')
+        $('.course_main_cont').eq(index).show()
+    })
+<php>if(!$mid) { </php>
+	setInterval(function(){
+		$.post("{:U('check_course_login')}",{},function(res){
+			console.log(res)
+			if(res=='1'){
+				console.log('11111')
+                alert('登录成功（未支付）')
+				window.location.href = window.location.href;
+			}else if(res=='2'){
+				console.log('222')
+                alert('登录成功（已支付）')
+				window.location.href = window.location.href;
+                
+			}
+		});
+	},3000);
+<php> }elseif(!$is_pay) { </php>
+setInterval(function(){
+	$.post("{:U('check_course_pay')}",{},function(res){
+		if(res=='1'){
+            alert('支付成功')
+			window.location.href = window.location.href;
+		}
+	});
+},3000);
+<php> }else{ </php>
+$('#my-video').bind('contextmenu',function() { return false; }); 
+    var myPlayer = videojs('my-video');
+    myPlayer.ready(function(){
+       this.play()
+    });
+
+<php> } </php>
+</script>
+
+</body>
+</html>

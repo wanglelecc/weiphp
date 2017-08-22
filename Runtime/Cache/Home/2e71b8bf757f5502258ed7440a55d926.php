@@ -1,0 +1,3 @@
+<?php if (!defined('THINK_PATH')) exit();?><ul class="upload_piclist">
+	<?php if(is_array($picList)): $i = 0; $__LIST__ = $picList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="upload-pre-item22" data-id="<?php echo ($vo["id"]); ?>" onClick="toggleCheck(this)"><img src="<?php echo (get_cover_url($vo["id"])); ?>" width="100" height="100"/><span class="ck-ico"></span><input type="hidden" value="<?php echo ($vo["id"]); ?>"/></li><?php endforeach; endif; else: echo "" ;endif; ?>
+</ul>

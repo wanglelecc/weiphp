@@ -1,0 +1,9 @@
+[ 2017-08-22T08:35:31+08:00 ] 192.168.1.169 /index.php?s=/w16/Reserve/Reserve/lists.html&mdm=17|349
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'reserve' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 190 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_reserve` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`cTime`,`token`,`password`,`jump_url`,`content`,`finish_tip`,`can_edit`,`intro`,`mTime`,`cover`,`template`,`status`,`start_time`,`end_time`,`pay_online` FROM `wp_reserve` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_reserve` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+

@@ -1,0 +1,8 @@
+[ 2017-08-22T08:35:29+08:00 ] 192.168.1.169 /index.php?s=/w16/WishCard/WishCard/lists.html&mdm=17|25
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'wish_card' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_wish_card` [ RunTime:0.0013s ]
+SQL: SELECT `send_name`,`receive_name`,`content`,`create_time`,`read_count`,`id` FROM `wp_wish_card` WHERE `token` = 'gh_268db5519a17' ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_wish_card` WHERE `token` = 'gh_268db5519a17' LIMIT 1   [ RunTime:0.0002s ]
+

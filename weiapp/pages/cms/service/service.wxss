@@ -1,0 +1,5 @@
+page{background: #f2f2f2;}
+.service_item{background: #fff;margin-bottom: 10rpx;}
+.service_item image{width: 48rpx;height: 48rpx;margin-right: 24rpx;vertical-align: middle}
+.service_title{border-bottom: 1px solid #e2e2e2;padding: 16rpx;font-size: 30rpx;line-height: 44rpx}
+.service_content{padding: 30rpx;font-size: 32rpx;}

@@ -1,0 +1,9 @@
+<?php
+//000000086400a:11:{s:2:"id";s:2:"48";s:4:"name";s:12:"lucky_follow";s:5:"title";s:15:"中奖者信息";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:108:"["draw_id","sport_id","award_id","follow_id","address","num","state","zjtime","djtime","remark","scan_code"]";s:9:"list_grid";s:174:"draw_id:活动
+award_id:奖项
+award_name:奖品
+zjtime|time_format:中奖时间
+follow_id:8%微信昵称
+state:发奖状态
+ids:8%操作:do_fafang?id=[id]|发放奖品";s:8:"list_row";s:2:"20";s:10:"search_key";s:27:"award_id:输入奖品名称";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:4:"Draw";s:8:"file_md5";s:32:"08ce09306af90d155e7f07b2595efd23";}
+?>

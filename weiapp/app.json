@@ -1,0 +1,46 @@
+{
+  "pages":[  
+    "pages/index/index", 
+    "pages/contact/contact", 
+    "pages/message/message",  
+    "pages/payment/payment",  
+    "pages/qrcode/qrcode",  
+    "pages/upload/upload",
+    "pages/cms/splash/splash",
+    "pages/cms/index/index",
+    "pages/cms/service/service",
+    "pages/cms/product/product",
+    "pages/sms/sms",
+    "pages/card/card"  
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeiPHP",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/cms/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_cur.png"
+      },{
+        "pagePath": "pages/cms/product/product",
+        "text": "产品",
+        "iconPath": "images/icon_product.png",
+        "selectedIconPath": "images/icon_product_cur.png"
+      },{
+        "pagePath": "pages/cms/service/service",
+        "text": "服务",
+        "iconPath": "images/icon_service.png",
+        "selectedIconPath": "images/icon_service_cur.png"
+      }
+    ],
+    "color":"#929292",
+    "selectedColor":"#2190dd",
+    "backgroundColor":"#fff"
+  }
+}

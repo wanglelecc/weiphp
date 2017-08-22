@@ -1,0 +1,31 @@
+<include file="Home@Public/mobile_head2"/>
+<body>
+<div id="container" class="container">
+
+  <div class="btnWrap"> <a href="javascript:void(0)" class="start_btn" id="batchAddCard" style="background:{$info.button_color}"> 领取卡券 </a> </div>
+</div>
+<include file="Home@Public/mobile_foot"/> 
+<script>
+
+// };
+document.querySelector('#batchAddCard').onclick = function () {
+
+	 
+		wx.addCard({
+		    cardList: [{
+		        cardId: 'prgF0t5TTYf8SfKtbXU3JRltG86U',
+		        cardExt: '{$cardExt}' 
+		    }], // 需要添加的卡券列表
+		    success: function (res) {
+	 	        var cardList = res.cardList; // 添加的卡券列表信息
+	 	        console.log(cardList);
+ 		    	 alert('已添加卡券：' + JSON.stringify(res.cardList));		    	 
+		    }
+		});
+	
+};
+
+
+</script>
+</body>
+</html>

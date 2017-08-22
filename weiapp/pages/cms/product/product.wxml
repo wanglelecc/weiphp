@@ -1,0 +1,6 @@
+<view class="product">
+  <navigator  wx:for="{{product}}" class="product_item" url="url?id={{item.id}}">
+    <image src="{{item.img}}" mode="aspectFit"></image>
+    <view>{{item.title}}</view>
+  </navigator>
+</view>

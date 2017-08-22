@@ -1,0 +1,14 @@
+<extend name="Home@Base/common" />
+<block name="body">
+  
+  <!-- 标签页导航 -->
+  <div class="span9 page_message">
+    <section id="contents">
+      <include file="Home@Addons/_nav" />
+      <div class="tab-content"> 
+        <!-- 表单 -->
+        <weiphp:form model="form_model" action="form_action" method="form_method" id="form_id" class="form_class"></weiphp:form>
+      </div>
+    </section>
+  </div>
+</block>

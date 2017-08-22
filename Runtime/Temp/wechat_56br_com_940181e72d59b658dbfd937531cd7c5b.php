@@ -1,0 +1,9 @@
+<?php
+//000000086400a:11:{s:2:"id";s:2:"95";s:4:"name";s:4:"vote";s:5:"title";s:6:"投票";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:77:"["keyword","title","description","picurl","start_date","end_date","template"]";s:9:"list_grid";s:247:"id:投票ID
+keyword:关键词
+title:投票标题
+type:类型
+is_img:状态
+vote_count:投票数
+ids:操作:[EDIT]&id=[id]|编辑,[DELETE]|删除,showLog&id=[id]|投票记录,showCount&id=[id]|选项票数,preview?id=[id]&target=_blank|预览";s:8:"list_row";s:2:"20";s:10:"search_key";s:5:"title";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:4:"Vote";s:8:"file_md5";s:32:"e692418f1bbffdf2d9063ff0e2d2e20a";}
+?>

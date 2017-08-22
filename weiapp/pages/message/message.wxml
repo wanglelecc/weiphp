@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="weishop_title">模板消息</view>
+  <form bindsubmit="formSubmit" report-submit="true">
+    <view class="btn-area">
+      <button formType="submit">发个模板消息</button>
+    </view>
+  </form>
+</view>

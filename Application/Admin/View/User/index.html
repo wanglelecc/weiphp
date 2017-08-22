@@ -1,0 +1,103 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>用户列表</h2>
+	</div>
+	<div class="cf">
+        <!-- 高级搜索 -->
+		<div class="search-form fr cf">
+
+			<div class="sleft">
+				<input type="text" name="nickname" class="search-input" value="{:I('nickname')}" placeholder="请输入用户昵称或者ID">
+				<a class="sch-btn" href="javascript:;" id="search" url="{:U('index',array('group_id'=>$group_id))}"><i class="btn-search"></i></a>
+			</div>
+		</div>
+    </div>
+    <!-- 数据列表 -->
+    <div class="data-table table-striped">
+	<table class="">
+    <thead>
+        <tr>
+		<th class="">UID</th>
+		<th class="">昵称</th>
+		<th class="">金币值</th>
+        <th class="">经验值</th>
+		<th class="">登录次数</th>
+		<th class="">最后登录时间</th>
+		<th class="">最后登录IP</th>
+		<th class="">注册时间</th>
+		<th class="">审核时间</th>
+		<th class="">状态</th>
+        <th class="">审核</th>
+		<th class="">操作</th>
+		</tr>
+    </thead>
+    <tbody>
+		<notempty name="_list">
+		<volist name="_list" id="vo">
+		<tr>
+			<td>{$vo.uid} </td>
+			<td>{$vo.nickname}</td>
+			<td>{$vo.score}</td>
+            <td>{$vo.experience}</td>
+			<td>{$vo.login_count|intval}</td>
+			<td><span>{$vo.last_login_time|time_format}</span></td>
+			<td><span>{:long2ip($vo['last_login_ip'])}</span></td>
+			<td><span>{$vo.reg_time|time_format}</span></td>
+			<td><span>{$vo.audit_time|time_format}</span></td>
+			<td><eq name="vo.status" value="1">
+				<a href="{:U('User/changeStatus?method=forbidUser&id='.$vo['uid'])}" class="ajax-get">{$vo.status_text}</a>
+				<else/>
+				<a href="{:U('User/changeStatus?method=resumeUser&id='.$vo['uid'])}" class="ajax-get">{$vo.status_text}</a>
+				</eq></td>
+            <td><eq name="vo.is_audit" value="1">
+				<a href="{:U('User/changeStatus?method=audit_0&id='.$vo['uid'])}" class="ajax-get">{$vo.audit_text}</a>
+				<else/>
+				<a href="{:U('User/changeStatus?method=audit_1&id='.$vo['uid'])}" class="ajax-get">{$vo.audit_text}</a>
+				</eq></td>
+			<td>
+                <a href="{:U('AuthManager/public_count?uid='.$vo['uid'])}">公众号设置</a>
+                <a href="{:U('Menu/lists',array('uid'=>$vo['uid']))}">导航管理</a>
+                <a href="{:U('changeStatus?method=deleteUser&id='.$vo['uid'])}" class="confirm ajax-get">删除</a>
+                </td>
+		</tr>
+		</volist>
+		<else/>
+		<td colspan="11" class="text-center"> aOh! 暂时还没有内容! </td>
+		</notempty>
+	</tbody>
+    </table> 
+	</div>
+    <div class="page">
+        {$_page}
+    </div>
+    
+
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+	//回车搜索
+	$(".search-input").keyup(function(e){
+		if(e.keyCode === 13){
+			$("#search").click();
+			return false;
+		}
+	});
+	</script>
+</block>

@@ -1,0 +1,10 @@
+<?php
+//000000086400a:11:{s:2:"id";s:3:"152";s:4:"name";s:6:"coupon";s:5:"title";s:9:"优惠券";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:267:"["title","cover","use_tips","start_time","start_tips","end_time","end_tips","end_img","num","max_num","over_time","empty_prize_tips","pay_password","background","more_button","use_start_time","shop_name","shop_logo","head_bg_color","button_color","template","member"]";s:9:"list_grid";s:319:"id:优惠券编号
+title:标题
+num:计划发送数
+collect_count:已领取数
+use_count:已使用数
+start_time|time_format:开始时间
+end_time|time_format:结束时间
+ids:操作:[EDIT]|编辑,[DELETE]|删除,lists?target_id=[id]&target=_blank&_controller=Sn|成员管理,preview?id=[id]&target=_blank|预览";s:8:"list_row";s:2:"20";s:10:"search_key";s:5:"title";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:6:"Coupon";s:8:"file_md5";s:32:"479e1c8a58d9494b90a659db775ea96d";}
+?>

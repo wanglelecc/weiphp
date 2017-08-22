@@ -1,0 +1,12 @@
+[ 2017-08-22T07:50:36+08:00 ] 192.168.1.169 /install.php?s=/w0/install/step1.html
+NOTIC: [8] Undefined offset: 3 D:\webServer\www\wll\wechat.56br.com\Application\Install\Common\function.php 第 122 行.
+NOTIC: [8] Undefined offset: 3 D:\webServer\www\wll\wechat.56br.com\Application\Install\Common\function.php 第 123 行.
+NOTIC: [8] Undefined offset: 3 D:\webServer\www\wll\wechat.56br.com\Application\Install\Common\function.php 第 124 行.
+NOTIC: [8] Use of undefined constant SITE_VERSION - assumed 'SITE_VERSION' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 11 行.
+NOTIC: [8] Use of undefined constant SITE_VERSION - assumed 'SITE_VERSION' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 12 行.
+NOTIC: [8] Use of undefined constant SITE_VERSION - assumed 'SITE_VERSION' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 13 行.
+NOTIC: [8] Use of undefined constant SITE_VERSION - assumed 'SITE_VERSION' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 17 行.
+NOTIC: [8] Use of undefined constant SITE_VERSION - assumed 'SITE_VERSION' D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 20 行.
+NOTIC: [8] Undefined index: update D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 41 行.
+NOTIC: [8] Undefined offset: 3 D:\webServer\www\wll\wechat.56br.com\Runtime\Cache\Install\1afb52484deba53b245c0d598473848f.php 第 83 行.
+

@@ -1,0 +1,56 @@
+[ 2017-08-22T08:14:45+08:00 ] 192.168.1.169 /index.php?s=/w16/QrAdmin/QrAdmin/lists.html&mdm=15|363
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wp_user_tag` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'qr_admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_qr_admin` [ RunTime:0.0011s ]
+SQL: SELECT `qr_code`,`action_name`,`group_id`,`tag_ids`,`id` FROM `wp_qr_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_qr_admin` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T08:14:49+08:00 ] 192.168.1.169 /index.php?s=/w16/QrAdmin/QrAdmin/add/model/1152/mdm/15%7C363.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1152 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group` WHERE `token` = 'gh_268db5519a17' ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wp_user_tag` WHERE `token` = 'gh_268db5519a17' ORDER BY id asc  [ RunTime:0.0009s ]
+
+[ 2017-08-22T08:15:07+08:00 ] 192.168.1.169 /index.php?s=/w16/QrAdmin/QrAdmin/add.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: INSERT INTO `wp_admin_log` (`uid`,`ip`,`mod`,`cTime`,`content`) VALUES ('1','124.127.144.68','QrAdmin','1503360907','http://wechat02.56br.com/index.php?s=/w16/QrAdmin/QrAdmin/add.html
+POST: array (
+  \'action_name\' => \'QR_SCENE\',
+  \'group_id\' => \'0\',
+  \'material\' => \'text:10\',
+  \'material_material_type\' => \'text\',
+  \'material_material_text_id\' => \'10\',
+  \'material_material_news_id\' => \'\',
+  \'material_material_img_id\' => \'\',
+  \'material_material_voice_id\' => \'\',
+  \'material_material_video_id\' => \'\',
+); 
+') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1152 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_qr_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wp_model` WHERE `id` = 1152 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_qr_admin` (`action_name`,`group_id`,`material`) VALUES ('QR_SCENE','0','text:10') [ RunTime:0.0004s ]
+SQL: SELECT `scene_id` FROM `wp_qr_code` WHERE ( action_name='QR_SCENE' ) ORDER BY scene_id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `wp_qr_code` (`scene_id`,`addon`,`aim_id`,`action_name`,`extra_text`,`extra_int`,`cTime`,`token`,`qr_code`) VALUES ('100001','QrAdmin','5','QR_SCENE','','0','1503360907','gh_268db5519a17','https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFY8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNmRBV3g1RnU5dVQxT2M0M2hwMTcAAgSMd5tZAwQAjScA') [ RunTime:0.0009s ]
+SQL: UPDATE `wp_qr_admin` SET `qr_code`='https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFY8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNmRBV3g1RnU5dVQxT2M0M2hwMTcAAgSMd5tZAwQAjScA' WHERE `id` = 5 [ RunTime:0.0006s ]
+
+[ 2017-08-22T08:15:09+08:00 ] 192.168.1.169 /index.php?s=/w16/QrAdmin/QrAdmin/lists/model/qr_admin.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wp_user_tag` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0004s ]
+SQL: SELECT `qr_code`,`action_name`,`group_id`,`tag_ids`,`id` FROM `wp_qr_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_qr_admin` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-22T08:42:12+08:00 ] 192.168.1.169 /index.php?s=/w16/QrAdmin/QrAdmin/lists.html
+SQL: SELECT * FROM `wp_apps_link` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_menu` WHERE `place` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `wp_auth_group` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wp_user_tag` WHERE `token` = 'gh_268db5519a17'  [ RunTime:0.0003s ]
+SQL: SELECT `qr_code`,`action_name`,`group_id`,`tag_ids`,`id` FROM `wp_qr_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wp_qr_admin` LIMIT 1   [ RunTime:0.0002s ]
+

@@ -1,0 +1,57 @@
+<extend name="Base/common" />
+<block name="body">
+  <div class="span9 page_message">
+    <section id="contents"> <include file="Home@Addons/_nav" />
+      <div class="tab-content"> 
+        <!-- 表单 -->
+        <php> $post_url || $post_url = U('add?model='.$model['id'], $get_param);</php>
+        <form class="form-horizontal form-center" method="post" action="{$post_url}" id="form">
+          <div class="form-item cf toggle-file_id">
+            <label class="item-label"><span class="need_flag">*</span>上传文件 </label>
+            <div class="controls">
+              <div class="controls upload_file">
+                <div  id="upload_file_file_id" class="uploadrow_file"></div>
+                <input type="hidden" name="file_id" id="file_id" value="{$data[file_id]}"/>
+                <div class="upload-img-box">
+                  <present name="data[file_id]">
+                    <div class="upload-pre-file"><span class="upload_icon_all"></span>{$data[file_id]}</div>
+                  </present>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-item cf toggle-title">
+            <label class="item-label"> 素材名称 </label>
+            <div class="controls">
+              <input type="text" value="" name="title" id="title" class="text input-large">
+            </div>
+          </div> -->          
+          <div class="form-item form_bh">
+           	<input type="hidden" value="" name="title" id="title" class="text input-large">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">{$submit_name|default='确 定'}</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</block>
+<block name="script">
+  <script type="text/javascript">
+$('#submit').click(function(){
+    $('#form').submit();
+});
+
+$(function(){
+
+	initUploadFile(function(data,name){
+		var old_title = $('#title').val();
+		if(old_title==''){
+			var title = data.name.replace('.'+data.ext, '');
+			$('#title').val(title);		
+		}
+	});
+    showTab();
+	
+});
+</script> 
+</block>

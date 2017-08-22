@@ -1,0 +1,3 @@
+[ 2017-08-22T08:05:10+08:00 ] 192.168.1.169 /index.php?s=/w16/home/weixin/index/signature/d3e1ce50d26db638e6a03e1c8bf6b23b4fdbdd87/timestamp/1464254754/nonce/407622025.html
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type_' in 'field list'
+
